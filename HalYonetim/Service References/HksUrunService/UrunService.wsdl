@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://gtb.gov.tr/hks/WebServices" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://www.gtb.gov.tr//WebServices" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://gtb.gov.tr/hks/WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IUrunService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://www.gtb.gov.tr//WebServices" location="https://hks.hal.gov.tr/WebServices/UrunService.svc?wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IUrunService" type="i0:IUrunService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IUrunService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="UrunServiceMalinNiteligi">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceMalinNiteligi" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_MalinNiteligiIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_MalinNiteligiCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunler">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunler" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_UrunlerIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_UrunlerCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunBirimleri">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunBirimleri" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_UrunBirimleriIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_UrunBirimleriCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUretimSekilleri">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUretimSekilleri" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_UretimSekilleriIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_UretimSekilleriCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunCinsleri">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunCinsleri" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_UrunCinsleriIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_UrunCinsleriCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunMiktarBirimleri">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunMiktarBirimleri" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_UrunMiktarBirimleriIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_UrunMiktarBirimleriCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

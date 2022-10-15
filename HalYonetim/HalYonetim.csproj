@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B056353B-AEA7-43F1-8812-9531B72CB941}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CrmPosHalYonetim</RootNamespace>
+    <AssemblyName>CrmPosHalYonetim</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icons8_delivery_1.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v21.2.Export, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FastReport, Version=2020.1.17.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FastReport.Bars, Version=2020.1.17.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FastReport.Editor, Version=2020.1.17.0, Culture=neutral, PublicKeyToken=db7e5ce63278458c">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BildirimItem.cs" />
+    <Compile Include="ComboBoxItem.cs" />
+    <Compile Include="ComboItem.cs" />
+    <Compile Include="DbSettings.cs" />
+    <Compile Include="Entity\HKSMODEL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HKSMODEL.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\DataLayer.cs" />
+    <Compile Include="HksStokYonetim\FrmOdemeTanim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmOdemeTanim.Designer.cs">
+      <DependentUpon>FrmOdemeTanim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmTediye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmTediye.Designer.cs">
+      <DependentUpon>FrmTediye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\StyOdemeTanimIslem.cs" />
+    <Compile Include="Rapor\FrmRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor\FrmRapor.Designer.cs">
+      <DependentUpon>FrmRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HataLog.cs" />
+    <Compile Include="Etiket\FrmEtiketDizayn.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Etiket\FrmEtiketDizayn.Designer.cs">
+      <DependentUpon>FrmEtiketDizayn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Extension.cs" />
+    <Compile Include="FrmBildirimListesi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmBildirimListesi.Designer.cs">
+      <DependentUpon>FrmBildirimListesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKunyeErit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKunyeErit.Designer.cs">
+      <DependentUpon>FrmKunyeErit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHata.Designer.cs">
+      <DependentUpon>FrmHata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHksSevk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmHksSevk.Designer.cs">
+      <DependentUpon>FrmHksSevk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDatabaseAyar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmDatabaseAyar.Designer.cs">
+      <DependentUpon>FrmDatabaseAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEtiketYazdir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmEtiketYazdir.Designer.cs">
+      <DependentUpon>FrmEtiketYazdir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFirmaAyar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmFirmaAyar.Designer.cs">
+      <DependentUpon>FrmFirmaAyar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHksBildirim.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmHksBildirim.Designer.cs">
+      <DependentUpon>FrmHksBildirim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHksBilgiVeriIndir.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmHksBilgiVeriIndir.Designer.cs">
+      <DependentUpon>FrmHksBilgiVeriIndir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMagazaSevk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMagazaSevk.Designer.cs">
+      <DependentUpon>FrmMagazaSevk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMasrafOran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMasrafOran.Designer.cs">
+      <DependentUpon>FrmMasrafOran.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProgramAyarlari.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FrmProgramAyarlari.Designer.cs">
+      <DependentUpon>FrmProgramAyarlari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserControl.Designer.cs">
+      <DependentUpon>FrmUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuncellemeIslemi.cs" />
+    <Compile Include="HksStokYonetim\FrmCariTanitim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmCariTanitim.Designer.cs">
+      <DependentUpon>FrmCariTanitim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmDepoTanitim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmDepoTanitim.Designer.cs">
+      <DependentUpon>FrmDepoTanitim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmFatura.Designer.cs">
+      <DependentUpon>FrmFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmKasaTanim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmKasaTanim.Designer.cs">
+      <DependentUpon>FrmKasaTanim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmKasaTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmKasaTransfer.Designer.cs">
+      <DependentUpon>FrmKasaTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmListe.Designer.cs">
+      <DependentUpon>FrmListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmStokEldekiMiktar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmStokEldekiMiktar.Designer.cs">
+      <DependentUpon>FrmStokEldekiMiktar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmStokTanitim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmStokTanitim.Designer.cs">
+      <DependentUpon>FrmStokTanitim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmStokTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HksStokYonetim\FrmStokTransfer.Designer.cs">
+      <DependentUpon>FrmStokTransfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HksStokYonetim\StyCariIslem.cs" />
+    <Compile Include="HksStokYonetim\StyDepoIslem.cs" />
+    <Compile Include="HksStokYonetim\StyDepoSevkIslem.cs" />
+    <Compile Include="HksStokYonetim\StyFatura.cs" />
+    <Compile Include="HksStokYonetim\StyStokGirisCikisIslem.cs" />
+    <Compile Include="HksStokYonetim\StyKasaIslem.cs" />
+    <Compile Include="HksStokYonetim\StyStokIslem.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramAyarlari.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapor\FrmRaporFiltre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor\FrmRaporFiltre.Designer.cs">
+      <DependentUpon>FrmRaporFiltre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rapor\FrmRaporGoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor\FrmRaporGoruntule.Designer.cs">
+      <DependentUpon>FrmRaporGoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HksBildirimService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HksGenelService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\HksUrunService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="ServisYonetimi.cs" />
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Etiket\FrmEtiketDizayn.resx">
+      <DependentUpon>FrmEtiketDizayn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBildirimListesi.resx">
+      <DependentUpon>FrmBildirimListesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKunyeErit.resx">
+      <DependentUpon>FrmKunyeErit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHata.resx">
+      <DependentUpon>FrmHata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHksSevk.resx">
+      <DependentUpon>FrmHksSevk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDatabaseAyar.resx">
+      <DependentUpon>FrmDatabaseAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEtiketYazdir.resx">
+      <DependentUpon>FrmEtiketYazdir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFirmaAyar.resx">
+      <DependentUpon>FrmFirmaAyar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHksBildirim.resx">
+      <DependentUpon>FrmHksBildirim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHksBilgiVeriIndir.resx">
+      <DependentUpon>FrmHksBilgiVeriIndir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMagazaSevk.resx">
+      <DependentUpon>FrmMagazaSevk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMasrafOran.resx">
+      <DependentUpon>FrmMasrafOran.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProgramAyarlari.resx">
+      <DependentUpon>FrmProgramAyarlari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmOdemeTanim.resx">
+      <DependentUpon>FrmOdemeTanim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmTediye.resx">
+      <DependentUpon>FrmTediye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\FrmRapor.resx">
+      <DependentUpon>FrmRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserControl.resx">
+      <DependentUpon>FrmUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmCariTanitim.resx">
+      <DependentUpon>FrmCariTanitim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmDepoTanitim.resx">
+      <DependentUpon>FrmDepoTanitim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmFatura.resx">
+      <DependentUpon>FrmFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmKasaTanim.resx">
+      <DependentUpon>FrmKasaTanim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmKasaTransfer.resx">
+      <DependentUpon>FrmKasaTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmListe.resx">
+      <DependentUpon>FrmListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmStokEldekiMiktar.resx">
+      <DependentUpon>FrmStokEldekiMiktar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmStokTanitim.resx">
+      <DependentUpon>FrmStokTanitim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HksStokYonetim\FrmStokTransfer.resx">
+      <DependentUpon>FrmStokTransfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rapor\FrmRaporFiltre.resx">
+      <DependentUpon>FrmRaporFiltre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rapor\FrmRaporGoruntule.resx">
+      <DependentUpon>FrmRaporGoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <EntityDeploy Include="Entity\HKSMODEL.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HKSMODEL.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\HksBildirimService\BildirimService.wsdl" />
+    <None Include="Service References\HksBildirimService\BildirimService1.wsdl" />
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.BelgeTipleriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.BildirimEtiketCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.BildirimKayitCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.BildirimSorguCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.BildirimTurleriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.ErrorModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.KayitliKisiSorguCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.ReferansKunyeCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.SifatCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksBildirimService\CrmPosHalYonetim.HksBildirimService.TopluKunyeCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.BeldelerCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.DepolarCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.ErrorModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.HalIciIsyeriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.IlcelerCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.IllerCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.IsletmeTurleriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.SubelerCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\CrmPosHalYonetim.HksGenelService.UlkelerCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksGenelService\GenelService.wsdl" />
+    <None Include="Service References\HksGenelService\GenelService1.wsdl" />
+    <None Include="Service References\HksUrunService\CrmPosHalYonetim.HksUrunService.ErrorModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksUrunService\CrmPosHalYonetim.HksUrunService.MalinNiteligiCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksUrunService\CrmPosHalYonetim.HksUrunService.UretimSekilleriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksUrunService\CrmPosHalYonetim.HksUrunService.UrunBirimleriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksUrunService\CrmPosHalYonetim.HksUrunService.UrunCinsleriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksUrunService\CrmPosHalYonetim.HksUrunService.UrunlerCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksUrunService\CrmPosHalYonetim.HksUrunService.UrunMiktarBirimleriCevap.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\HksUrunService\UrunService.wsdl" />
+    <None Include="Service References\HksUrunService\UrunService1.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\HksBildirimService\" />
+    <WCFMetadataStorage Include="Service References\HksGenelService\" />
+    <WCFMetadataStorage Include="Service References\HksUrunService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksBildirimService\BildirimService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksBildirimService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksBildirimService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksBildirimService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksUrunService\UrunService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksUrunService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksUrunService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksUrunService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksGenelService\GenelService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksGenelService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksGenelService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\HksGenelService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table_excel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tag-label.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons8_delivery.ico" />
+    <Content Include="icons8_delivery_1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.gtb.gov.tr//WebServices" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://gtb.gov.tr/hks/WebServices" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GenelService" targetNamespace="http://www.gtb.gov.tr//WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://gtb.gov.tr/hks/WebServices" location="https://hks.hal.gov.tr/WebServices/GenelService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.gtb.gov.tr//WebServices">
+      <xsd:element name="BaseRequestMessageOf_IllerIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q1="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q1:IllerIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_IllerCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q2="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q2:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q3="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q3:IllerCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_IlcelerIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q4="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q4:IlcelerIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_IlcelerCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q5="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q5:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q6="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q6:IlcelerCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_BeldelerIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q7="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q7:BeldelerIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_BeldelerCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q8="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q8:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q9="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q9:BeldelerCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_UlkelerIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q10="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q10:UlkelerIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_UlkelerCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q11="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q11:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q12="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q12:UlkelerCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_HalIciIsyeriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q13="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q13:HalIciIsyeriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_HalIciIsyeriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q14="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q14:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q15="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q15:HalIciIsyeriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_IsletmeTurleriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q16="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q16:IsletmeTurleriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_IsletmeTurleriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q17="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q17:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q18="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q18:IsletmeTurleriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_DepolarIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q19="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q19:DepolarIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_DepolarCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q20="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q20:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q21="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q21:DepolarCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_SubelerIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q22="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q22:SubelerIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_SubelerCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q23="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q23:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q24="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q24:SubelerCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.ServiceContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="IllerIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="IllerIstek" nillable="true" type="tns:IllerIstek" />
+      <xs:complexType name="IllerCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="Iller" nillable="true" type="q25:ArrayOfIlDTO" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IllerCevap" nillable="true" type="tns:IllerCevap" />
+      <xs:complexType name="IlcelerIstek">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IlId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IlcelerIstek" nillable="true" type="tns:IlcelerIstek" />
+      <xs:complexType name="IlcelerCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="Ilceler" nillable="true" type="q26:ArrayOfIlceDTO" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IlcelerCevap" nillable="true" type="tns:IlcelerCevap" />
+      <xs:complexType name="BeldelerIstek">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="IlceId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="BeldelerIstek" nillable="true" type="tns:BeldelerIstek" />
+      <xs:complexType name="BeldelerCevap">
+        <xs:sequence>
+          <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="Beldeler" nillable="true" type="q27:ArrayOfBeldeDTO" />
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="BeldelerCevap" nillable="true" type="tns:BeldelerCevap" />
+      <xs:complexType name="UlkelerIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="UlkelerIstek" nillable="true" type="tns:UlkelerIstek" />
+      <xs:complexType name="UlkelerCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+          <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="Ulkeler" nillable="true" type="q28:ArrayOfUlkeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UlkelerCevap" nillable="true" type="tns:UlkelerCevap" />
+      <xs:complexType name="HalIciIsyeriIstek">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TcKimlikVergiNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="HalIciIsyeriIstek" nillable="true" type="tns:HalIciIsyeriIstek" />
+      <xs:complexType name="HalIciIsyeriCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="Isyerleri" nillable="true" type="q29:ArrayOfHalIciIsyeriDTO" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="HalIciIsyeriCevap" nillable="true" type="tns:HalIciIsyeriCevap" />
+      <xs:complexType name="IsletmeTurleriIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="IsletmeTurleriIstek" nillable="true" type="tns:IsletmeTurleriIstek" />
+      <xs:complexType name="IsletmeTurleriCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="IsletmeTurleri" nillable="true" type="q30:ArrayOfIsletmeTuruDTO" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IsletmeTurleriCevap" nillable="true" type="tns:IsletmeTurleriCevap" />
+      <xs:complexType name="DepolarIstek">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TcKimlikVergiNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="DepolarIstek" nillable="true" type="tns:DepolarIstek" />
+      <xs:complexType name="DepolarCevap">
+        <xs:sequence>
+          <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="Depolar" nillable="true" type="q31:ArrayOfDepoDTO" />
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="DepolarCevap" nillable="true" type="tns:DepolarCevap" />
+      <xs:complexType name="SubelerIstek">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="TcKimlikVergiNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="SubelerIstek" nillable="true" type="tns:SubelerIstek" />
+      <xs:complexType name="SubelerCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+          <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" minOccurs="0" name="Subeler" nillable="true" type="q32:ArrayOfSubeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="SubelerCevap" nillable="true" type="tns:SubelerCevap" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Genel.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfIlDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="IlDTO" nillable="true" type="tns:IlDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfIlDTO" nillable="true" type="tns:ArrayOfIlDTO" />
+      <xs:complexType name="IlDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="IlAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IlDTO" nillable="true" type="tns:IlDTO" />
+      <xs:complexType name="ArrayOfIlceDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="IlceDTO" nillable="true" type="tns:IlceDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfIlceDTO" nillable="true" type="tns:ArrayOfIlceDTO" />
+      <xs:complexType name="IlceDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="IlceAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IlceDTO" nillable="true" type="tns:IlceDTO" />
+      <xs:complexType name="ArrayOfBeldeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="BeldeDTO" nillable="true" type="tns:BeldeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfBeldeDTO" nillable="true" type="tns:ArrayOfBeldeDTO" />
+      <xs:complexType name="BeldeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="BeldeAdi" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="BeldeDTO" nillable="true" type="tns:BeldeDTO" />
+      <xs:complexType name="ArrayOfUlkeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="UlkeDTO" nillable="true" type="tns:UlkeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfUlkeDTO" nillable="true" type="tns:ArrayOfUlkeDTO" />
+      <xs:complexType name="UlkeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="UlkeAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UlkeDTO" nillable="true" type="tns:UlkeDTO" />
+      <xs:complexType name="ArrayOfHalIciIsyeriDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="HalIciIsyeriDTO" nillable="true" type="tns:HalIciIsyeriDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfHalIciIsyeriDTO" nillable="true" type="tns:ArrayOfHalIciIsyeriDTO" />
+      <xs:complexType name="HalIciIsyeriDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HalAdi" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="HalId" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="IsyeriAdi" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="TcKimlikVergiNo" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="HalIciIsyeriDTO" nillable="true" type="tns:HalIciIsyeriDTO" />
+      <xs:complexType name="ArrayOfIsletmeTuruDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="IsletmeTuruDTO" nillable="true" type="tns:IsletmeTuruDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfIsletmeTuruDTO" nillable="true" type="tns:ArrayOfIsletmeTuruDTO" />
+      <xs:complexType name="IsletmeTuruDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="IsletmeTuruAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="IsletmeTuruDTO" nillable="true" type="tns:IsletmeTuruDTO" />
+      <xs:complexType name="ArrayOfDepoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="DepoDTO" nillable="true" type="tns:DepoDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfDepoDTO" nillable="true" type="tns:ArrayOfDepoDTO" />
+      <xs:complexType name="DepoDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Adres" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BeldeId" type="xs:int" />
+          <xs:element minOccurs="0" name="DepoAdi" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Halicimi" type="xs:boolean" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="IlId" type="xs:int" />
+          <xs:element minOccurs="0" name="IlceId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="DepoDTO" nillable="true" type="tns:DepoDTO" />
+      <xs:complexType name="ArrayOfSubeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="SubeDTO" nillable="true" type="tns:SubeDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfSubeDTO" nillable="true" type="tns:ArrayOfSubeDTO" />
+      <xs:complexType name="SubeDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Adres" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="BeldeId" type="xs:int" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="IlId" type="xs:int" />
+          <xs:element minOccurs="0" name="IlceId" type="xs:int" />
+          <xs:element minOccurs="0" name="IsyeriTuru" type="xs:int" />
+          <xs:element minOccurs="0" name="SubeAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="SubeDTO" nillable="true" type="tns:SubeDTO" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfErrorModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ErrorModel" nillable="true" type="tns:ErrorModel" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfErrorModel" nillable="true" type="tns:ArrayOfErrorModel" />
+      <xs:complexType name="ErrorModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ErrorModel" nillable="true" type="tns:ErrorModel" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="BaseRequestMessageOf_IllerIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_IllerIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_IllerCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_IllerCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_IlcelerIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_IlcelerIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_IlcelerCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_IlcelerCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_BeldelerIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_BeldelerIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_BeldelerCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_BeldelerCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_UlkelerIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_UlkelerIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_UlkelerCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_UlkelerCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_HalIciIsyeriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_HalIciIsyeriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_HalIciIsyeriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_HalIciIsyeriCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_IsletmeTurleriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_IsletmeTurleriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_IsletmeTurleriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_IsletmeTurleriCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_DepolarIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_DepolarIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_DepolarCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_DepolarCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_SubelerIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_SubelerIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_SubelerCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_SubelerCevap" />
+  </wsdl:message>
+  <wsdl:portType name="IGenelService">
+    <wsdl:operation name="GenelServisIller">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisIller" name="BaseRequestMessageOf_IllerIstek" message="tns:BaseRequestMessageOf_IllerIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisIllerResponse" name="BaseResponseMessageOf_IllerCevap" message="tns:BaseResponseMessageOf_IllerCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="GenelServisIlceler">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisIlceler" name="BaseRequestMessageOf_IlcelerIstek" message="tns:BaseRequestMessageOf_IlcelerIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisIlcelerResponse" name="BaseResponseMessageOf_IlcelerCevap" message="tns:BaseResponseMessageOf_IlcelerCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="GenelServisBeldeler">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisBeldeler" name="BaseRequestMessageOf_BeldelerIstek" message="tns:BaseRequestMessageOf_BeldelerIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisBeldelerResponse" name="BaseResponseMessageOf_BeldelerCevap" message="tns:BaseResponseMessageOf_BeldelerCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="GenelServisUlkeler">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisUlkeler" name="BaseRequestMessageOf_UlkelerIstek" message="tns:BaseRequestMessageOf_UlkelerIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisUlkelerResponse" name="BaseResponseMessageOf_UlkelerCevap" message="tns:BaseResponseMessageOf_UlkelerCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="GenelServisHalIciIsyeri">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisHalIciIsyeri" name="BaseRequestMessageOf_HalIciIsyeriIstek" message="tns:BaseRequestMessageOf_HalIciIsyeriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisHalIciIsyeriResponse" name="BaseResponseMessageOf_HalIciIsyeriCevap" message="tns:BaseResponseMessageOf_HalIciIsyeriCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="GenelServisIsletmeTurleri">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisIsletmeTurleri" name="BaseRequestMessageOf_IsletmeTurleriIstek" message="tns:BaseRequestMessageOf_IsletmeTurleriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisIsletmeTurleriResponse" name="BaseResponseMessageOf_IsletmeTurleriCevap" message="tns:BaseResponseMessageOf_IsletmeTurleriCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="GenelServisDepolar">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisDepolar" name="BaseRequestMessageOf_DepolarIstek" message="tns:BaseRequestMessageOf_DepolarIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisDepolarResponse" name="BaseResponseMessageOf_DepolarCevap" message="tns:BaseResponseMessageOf_DepolarCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="GenelServisSubeler">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisSubeler" name="BaseRequestMessageOf_SubelerIstek" message="tns:BaseRequestMessageOf_SubelerIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IGenelService/GenelServisSubelerResponse" name="BaseResponseMessageOf_SubelerCevap" message="tns:BaseResponseMessageOf_SubelerCevap" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="GenelService">
+    <wsdl:port name="BasicHttpBinding_IGenelService" binding="i0:BasicHttpBinding_IGenelService">
+      <soap:address location="https://hks.hal.gov.tr/WebServices/GenelService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

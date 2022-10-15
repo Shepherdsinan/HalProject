@@ -1,0 +1,1056 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="HKSDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="FIRMABILGILERI">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TCVGNO" Type="nvarchar" MaxLength="50" />
+          <Property Name="UNVANI" Type="nvarchar" MaxLength="350" />
+          <Property Name="EPOSTA" Type="nvarchar" MaxLength="50" />
+          <Property Name="GSMNO" Type="nvarchar" MaxLength="50" />
+          <Property Name="SIFATI" Type="int" />
+          <Property Name="SIFAT2" Type="int" />
+          <Property Name="SIFRE" Type="nvarchar" MaxLength="50" />
+          <Property Name="SERVISSIFRESI" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="HKSBELDELER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HKSBELGE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="BELGE" Type="nvarchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="HKSBILDIRIM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADI" Type="varchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HKSBIRIM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="HKSCINS">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ITHALMI" Type="bit" />
+          <Property Name="URETIMSEKLIID" Type="int" />
+          <Property Name="CINSADI" Type="varchar" MaxLength="1000" />
+          <Property Name="URUNID" Type="int" />
+          <Property Name="URUNADI" Type="varchar" MaxLength="1000" />
+          <Property Name="URUNKODU" Type="varchar" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="HKSILCELER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HKSILLER">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <EntityType Name="HKSISLETME">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="600" />
+        </EntityType>
+        <EntityType Name="HKSSEVK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AracPlakaNo" Type="varchar" MaxLength="50" />
+          <Property Name="BelgeNo" Type="varchar" MaxLength="50" />
+          <Property Name="BelgeTipi" Type="int" />
+          <Property Name="BildirimciTcKimlikVergiNo" Type="varchar" MaxLength="50" />
+          <Property Name="KayitTarihi" Type="datetime" />
+          <Property Name="BildirimTarihi" Type="datetime" />
+          <Property Name="BildirimTuru" Type="int" />
+          <Property Name="GidecekIsyeriId" Type="int" />
+          <Property Name="KunyeNo" Type="varchar" MaxLength="50" />
+          <Property Name="NihaiKunyeNo" Type="varchar" MaxLength="50" />
+          <Property Name="MalinAdi" Type="varchar" MaxLength="250" />
+          <Property Name="MalinCinsi" Type="varchar" MaxLength="50" />
+          <Property Name="MalinCinsKodNo" Type="int" />
+          <Property Name="MalinKodNo" Type="int" />
+          <Property Name="MalinMiktari" Type="float" />
+          <Property Name="MalinSahibiTcKimlikVergiNo" Type="varchar" MaxLength="50" />
+          <Property Name="MalinSahibAdi" Type="varchar" MaxLength="150" />
+          <Property Name="MalinSatisFiyati" Type="float" />
+          <Property Name="MalinTuru" Type="varchar" MaxLength="50" />
+          <Property Name="MalinTuruKodNo" Type="int" />
+          <Property Name="MiktarBirimiAd" Type="varchar" MaxLength="50" />
+          <Property Name="MiktarBirimId" Type="int" />
+          <Property Name="RusumMiktari" Type="float" />
+          <Property Name="Sifat" Type="int" />
+          <Property Name="UniqueId" Type="varchar" MaxLength="50" />
+          <Property Name="UreticiTcKimlikVergiNo" Type="varchar" MaxLength="50" />
+          <Property Name="UreticisininAdUnvani" Type="varchar" MaxLength="150" />
+          <Property Name="UretimIlId" Type="int" />
+          <Property Name="UretimIlceId" Type="int" />
+          <Property Name="UretimBeldeId" Type="int" />
+          <Property Name="UretimSekli" Type="int" />
+          <Property Name="HksHataKodu" Type="int" />
+          <Property Name="HksHataAciklama" Type="varchar" MaxLength="250" />
+          <Property Name="ilkBildirimTarihi" Type="datetime" />
+        </EntityType>
+        <EntityType Name="HKSSTOK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="1000" />
+          <Property Name="MASRAFORAN" Type="float" />
+          <Property Name="NAKLIYEDEPOLAMAORAN" Type="float" />
+          <Property Name="ISLEMEPAKETLEMEORAN" Type="float" />
+          <Property Name="MAGAZACILIKORAN" Type="float" />
+          <Property Name="VERGIORAN" Type="float" />
+        </EntityType>
+        <EntityType Name="HKSSUBE">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="ADRES" Type="nvarchar(max)" />
+          <Property Name="BELDEID" Type="int" />
+          <Property Name="ILCEID" Type="int" />
+          <Property Name="ILID" Type="int" />
+          <Property Name="ISYERITURU" Type="int" />
+          <Property Name="SUBEADI" Type="nvarchar" MaxLength="1000" />
+		  <Property Name="BelgeNoSubeSevk" Type="varchar" MaxLength="25" />     
+
+        </EntityType>
+        <EntityType Name="HKSURETIMSEKLI">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" />
+          <Property Name="UretimSekliAdi" Type="varchar" MaxLength="250" Nullable="false" />
+        </EntityType>
+        <EntityType Name="STY_CARI">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KODU" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="FATURAADRES_IL" Type="nvarchar" MaxLength="100" />
+          <Property Name="FATURAADRES_ILCE" Type="nvarchar" MaxLength="100" />
+          <Property Name="FATURAADRES" Type="nvarchar" MaxLength="100" />
+          <Property Name="SEVKADRES_IL" Type="nvarchar" MaxLength="100" />
+          <Property Name="SEVKADRES_ILCE" Type="nvarchar" MaxLength="100" />
+          <Property Name="SEVKADRES" Type="nvarchar" MaxLength="200" />
+        </EntityType>
+        <EntityType Name="STY_DEPO">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DEPO_TANIM" Type="nvarchar" MaxLength="150" Nullable="false" />
+        </EntityType>
+        <EntityType Name="STY_FATURA_HAREKET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FAT_REC" Type="int" />
+          <Property Name="STOK_KODU" Type="nvarchar" MaxLength="50" />
+          <Property Name="BIRIM" Type="nvarchar" MaxLength="50" />
+          <Property Name="MIKTAR" Type="float" />
+          <Property Name="ICERIK_MIKTAR" Type="float" />
+          <Property Name="FIYAT" Type="float" />
+          <Property Name="KDVORAN" Type="float" />
+          <Property Name="KDVTUTAR" Type="float" />
+          <Property Name="TUTAR" Type="float" />
+          <Property Name="KASANO" Type="nvarchar" MaxLength="50" />
+          <Property Name="KASA_MIKTAR" Type="float" />
+          <Property Name="KASA_FIYAT" Type="float" />
+          <Property Name="KASA_TUTAR" Type="float" />
+          <Property Name="IADE_KASANO" Type="nvarchar" MaxLength="50" />
+          <Property Name="IADE_KASA_MIKTAR" Type="float" />
+          <Property Name="IADE_KASA_FIYAT" Type="float" />
+          <Property Name="IADE_KASA_TUTAR" Type="float" />
+        </EntityType>
+        <EntityType Name="STY_FATURA_UST">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BELGE_TIPI" Type="tinyint" />
+          <Property Name="SERI" Type="nvarchar" MaxLength="50" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="BELGENO" Type="nvarchar" MaxLength="50" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="CARI_KOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="ARATOPLAM" Type="float" />
+          <Property Name="KDV_TOPLAM" Type="float" />
+          <Property Name="YEKUN" Type="float" />
+          <Property Name="RUSUM_TOPLAM" Type="float" />
+          <Property Name="RUSUM_KDV_TOPLAM" Type="float" />
+          <Property Name="HAMMALIYE_TOPLAM" Type="float" />
+          <Property Name="HAMMALIYE_KDV_TOPLAM" Type="float" />
+          <Property Name="NAKLIYE_TOPLAM" Type="float" />
+          <Property Name="IADE_KASA_KDV_TOPLAM" Type="float" />
+        </EntityType>
+        <EntityType Name="STY_KASA">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="TANIM" Type="nvarchar" MaxLength="50" />
+          <Property Name="IADE" Type="bit" />
+        </EntityType>
+        <EntityType Name="STY_KASA_MIKTAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="GIRIS_CIKIS" Type="tinyint" />
+          <Property Name="CARI_KOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="KASA_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="MIKTAR" Type="float" />
+        </EntityType>
+        <EntityType Name="STY_ODEME_HAREKET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FAT_REC" Type="int" />
+          <Property Name="ODEME_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="TUTAR" Type="float" />
+          <Property Name="ACIKLAMA" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="STY_ODEME_TANIM">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="TANIM" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="STY_SEVK_HAREKET">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SERI" Type="nvarchar" MaxLength="50" />
+          <Property Name="SIRA" Type="int" />
+          <Property Name="SATIR" Type="int" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="STOK_KODU" Type="nvarchar" MaxLength="50" />
+          <Property Name="CIKIS_DEPO_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="GIRIS_DEPO_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="KASA_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="KASA_MIKTAR" Type="float" />
+          <Property Name="URUN_MIKTAR" Type="float" />
+          <Property Name="BIRIM_FIYAT" Type="float" />
+          <Property Name="TOPLAM_TUTAR" Type="float" />
+          <Property Name="STOK_MIKTAR_ID" Type="int" />
+        </EntityType>
+        <EntityType Name="STY_STOK">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KODU" Type="nvarchar" MaxLength="50" />
+          <Property Name="ADI" Type="nvarchar" MaxLength="150" />
+          <Property Name="KDVORAN" Type="float" />
+          <Property Name="FIYAT" Type="float" />
+          <Property Name="BIRIM1" Type="nvarchar" MaxLength="50" />
+          <Property Name="KATSAYI1" Type="float" />
+          <Property Name="BIRIM2" Type="nvarchar" MaxLength="50" />
+          <Property Name="KATSAYI2" Type="float" />
+          <Property Name="BIRIM3" Type="nvarchar" MaxLength="50" />
+          <Property Name="KATSAYI3" Type="float" />
+          <Property Name="BIRIM4" Type="nvarchar" MaxLength="50" />
+          <Property Name="KATSAYI4" Type="float" />
+        </EntityType>
+        <EntityType Name="STY_STOK_MIKTAR">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TARIH" Type="datetime" />
+          <Property Name="CARI_KOD" Type="nvarchar" MaxLength="50" />
+          <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" />
+          <Property Name="STOK_KODU" Type="nvarchar" MaxLength="50" />
+          <Property Name="BIRIM_FIYAT" Type="float" />
+          <Property Name="BIRIM_MIKTAR" Type="float" />
+          <Property Name="KASA_MIKTAR" Type="float" />
+          <Property Name="IADE_KASA_MIKTAR" Type="float" />
+        </EntityType>
+        <EntityContainer Name="HKSDBModelStoreContainer">
+          <EntitySet Name="FIRMABILGILERI" EntityType="Self.FIRMABILGILERI" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSBELDELER" EntityType="Self.HKSBELDELER" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSBELGE" EntityType="Self.HKSBELGE" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSBILDIRIM" EntityType="Self.HKSBILDIRIM" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSBIRIM" EntityType="Self.HKSBIRIM" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSCINS" EntityType="Self.HKSCINS" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSILCELER" EntityType="Self.HKSILCELER" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSILLER" EntityType="Self.HKSILLER" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSISLETME" EntityType="Self.HKSISLETME" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSSEVK" EntityType="Self.HKSSEVK" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSSTOK" EntityType="Self.HKSSTOK" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSSUBE" EntityType="Self.HKSSUBE" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="HKSURETIMSEKLI" EntityType="Self.HKSURETIMSEKLI" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_CARI" EntityType="Self.STY_CARI" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_DEPO" EntityType="Self.STY_DEPO" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_FATURA_HAREKET" EntityType="Self.STY_FATURA_HAREKET" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_FATURA_UST" EntityType="Self.STY_FATURA_UST" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_KASA" EntityType="Self.STY_KASA" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_KASA_MIKTAR" EntityType="Self.STY_KASA_MIKTAR" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_ODEME_HAREKET" EntityType="Self.STY_ODEME_HAREKET" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_ODEME_TANIM" EntityType="Self.STY_ODEME_TANIM" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_SEVK_HAREKET" EntityType="Self.STY_SEVK_HAREKET" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_STOK" EntityType="Self.STY_STOK" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="STY_STOK_MIKTAR" EntityType="Self.STY_STOK_MIKTAR" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="HKSDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+        <EntityContainer Name="HKSDBEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="FirmaBilgileri" EntityType="HKSDBModel.FirmaBilgisi" />
+          <EntitySet Name="HKSBeldeler" EntityType="HKSDBModel.HKSBelde" />
+          <EntitySet Name="HKSBildirimler" EntityType="HKSDBModel.HKSBildirim" />
+          <EntitySet Name="HKSBirimler" EntityType="HKSDBModel.HKSBirim" />
+          <EntitySet Name="HKSCinsler" EntityType="HKSDBModel.HKSCins" />
+          <EntitySet Name="HKSIlceler" EntityType="HKSDBModel.HKSIlce" />
+          <EntitySet Name="HKSIller" EntityType="HKSDBModel.HKSIL" />
+          <EntitySet Name="HKSIsletmeler" EntityType="HKSDBModel.HKSIsletme" />
+          <EntitySet Name="HKSStoklar" EntityType="HKSDBModel.HKSStok" />
+          <EntitySet Name="HKSSubeler" EntityType="HKSDBModel.HKSSube" />
+          <EntitySet Name="HKSUretimSekilleri" EntityType="HKSDBModel.HKSUretimSekli" />
+          <EntitySet Name="HKSBelgeler" EntityType="HKSDBModel.HKSBelge" />
+          <EntitySet Name="HksSevkler" EntityType="HKSDBModel.HksSevk" />
+          <EntitySet Name="StyStoklar" EntityType="HKSDBModel.StyStok" />
+          <EntitySet Name="StyCariler" EntityType="HKSDBModel.StyCari" />
+          <EntitySet Name="StyDepolar" EntityType="HKSDBModel.StyDepo" />
+          <EntitySet Name="StyKasalar" EntityType="HKSDBModel.StyKasa" />
+          <EntitySet Name="StyFaturaHareketleri" EntityType="HKSDBModel.StyFaturaHareket" />
+          <EntitySet Name="StyFaturalar" EntityType="HKSDBModel.StyFatura" />
+          <EntitySet Name="StySevkHareketleri" EntityType="HKSDBModel.StySevkHareket" />
+          <EntitySet Name="StyStokMiktarlar" EntityType="HKSDBModel.StyStokMiktar" />
+          <EntitySet Name="StyKasaMiktarlar" EntityType="HKSDBModel.StyKasaMiktar" />
+          <EntitySet Name="StyOdemeTanimlari" EntityType="HKSDBModel.StyOdemeTanim" />
+          <EntitySet Name="StyOdemeHareketleri" EntityType="HKSDBModel.StyOdemeHareket" />
+        </EntityContainer>
+        <EntityType Name="FirmaBilgisi">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="TcVgNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Unvani" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+          <Property Name="EPosta" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Gsm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Sifat1" Type="Int32" />
+          <Property Name="Sifat2" Type="Int32" />
+          <Property Name="Sifre" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ServisSifresi" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSBelde">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSBildirim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSBirim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSCins">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Ithalmi" Type="Boolean" />
+          <Property Name="UretimSekliID" Type="Int32" />
+          <Property Name="CinsAdi" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="UrunID" Type="Int32" />
+          <Property Name="UrunAdi" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Type="String" Name="UrunKodu" MaxLength="1000" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="HKSIlce">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSIL">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSIsletme">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" MaxLength="600" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSStok">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adi" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+          <Property Name="MasrafOrani" Type="Double" />
+          <Property Name="NakliyeDepolamaOran" Type="Double" />
+          <Property Name="IslemePaketlemeOran" Type="Double" />
+          <Property Name="MagazacilikOran" Type="Double" />
+          <Property Name="VergiOran" Type="Double" />
+        </EntityType>
+        <EntityType Name="HKSSube">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Adres" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="BeldeID" Type="Int32" />
+          <Property Name="IlceID" Type="Int32" />
+          <Property Name="IlID" Type="Int32" />
+          <Property Name="IsYeriTuru" Type="Int32" />
+          <Property Name="SubeAdi" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+		  <Property Name="BelgeNoSubeSevk" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSUretimSekli">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="UretimSekliAdi" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="HKSBelge">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" />
+          <Property Type="String" Name="Belge" MaxLength="1000" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="HksSevk">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="AracPlakaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BelgeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BelgeTipi" Type="Int32" />
+          <Property Name="BildirimciTcKimlikVergiNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="BildirimTarihi" Type="DateTime" Precision="3" />
+          <Property Name="BildirimTuru" Type="Int32" />
+          <Property Name="GidecekIsyeriId" Type="Int32" />
+          <Property Name="KunyeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NihaiKunyeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MalinAdi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="MalinCinsi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MalinCinsKodNo" Type="Int32" />
+          <Property Name="MalinKodNo" Type="Int32" />
+          <Property Name="MalinMiktari" Type="Double" />
+          <Property Name="MalinSahibiTcKimlikVergiNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MalinSahibAdi" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="MalinSatisFiyati" Type="Double" />
+          <Property Name="MalinTuru" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MalinTuruKodNo" Type="Int32" />
+          <Property Name="MiktarBirimiAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="MiktarBirimId" Type="Int32" />
+          <Property Name="RusumMiktari" Type="Double" />
+          <Property Name="Sifat" Type="Int32" />
+          <Property Name="UniqueId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UreticiTcKimlikVergiNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="UreticisininAdUnvani" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+          <Property Name="UretimIlId" Type="Int32" />
+          <Property Name="UretimIlceId" Type="Int32" />
+          <Property Name="UretimBeldeId" Type="Int32" />
+          <Property Name="UretimSekli" Type="Int32" />
+          <Property Name="HksHataKodu" Type="Int32" />
+          <Property Name="HksHataAciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="KayitTarihi" Type="DateTime" Precision="3" />
+          <Property Name="ilkBildirimTarihi" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="StyStok">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" />
+          <Property Name="Kodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Adi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="KdvOran" Type="Double" />
+          <Property Name="Birim1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Katsayi1" Type="Double" />
+          <Property Name="Birim2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Katsayi2" Type="Double" />
+          <Property Name="Birim3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Katsayi3" Type="Double" />
+          <Property Name="Birim4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Katsayi4" Type="Double" />
+          <Property Name="Fiyat" Type="Double" />
+        </EntityType>
+        <EntityType Name="StyCari">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="Kodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Adi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="FaturaAdres_IL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FaturaAdresIlce" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="FaturaAdres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SevkAdresIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SevkAdresIlce" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="SevkAdres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="StyDepo">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="DepoNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DepoTanim" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="StyKasa">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="No" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tanim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Iadelimi" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="StyFaturaHareket">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="FatRec" Type="Int32" />
+          <Property Name="StokKodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Birim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Miktar" Type="Double" />
+          <Property Name="Fiyat" Type="Double" />
+          <Property Name="KdvOran" Type="Double" />
+          <Property Name="KdvTutar" Type="Double" />
+          <Property Name="Tutar" Type="Double" />
+          <Property Name="KasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KasaMiktar" Type="Double" />
+          <Property Name="KasaFiyat" Type="Double" />
+          <Property Name="KasaTutar" Type="Double" />
+          <Property Name="IadeKasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IadeKasaMiktar" Type="Double" />
+          <Property Name="IadeKasaFiyat" Type="Double" />
+          <Property Name="IadeKasaTutar" Type="Double" />
+          <Property Name="IcerikMiktar" Type="Double" />
+        </EntityType>
+        <EntityType Name="StyFatura">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="BelgeTipi" Type="Byte" />
+          <Property Name="Seri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sira" Type="Int32" />
+          <Property Name="BelgeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="CariKod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="AraToplam" Type="Double" />
+          <Property Name="KdvToplam" Type="Double" />
+          <Property Name="Yekun" Type="Double" />
+          <Property Name="RusumToplam" Type="Double" />
+          <Property Name="RusumKdvToplam" Type="Double" />
+          <Property Name="HammaliyeToplam" Type="Double" />
+          <Property Name="HammaliyeKdvToplam" Type="Double" />
+          <Property Name="NakliyeToplam" Type="Double" />
+          <Property Name="IadeKasaKdvTutar" Type="Double" />
+        </EntityType>
+        <EntityType Name="StySevkHareket">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="Seri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Sira" Type="Int32" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="StokKodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CikisDepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GirisDepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KasaMiktar" Type="Double" />
+          <Property Name="UrunMiktar" Type="Double" />
+          <Property Name="BirimFiyat" Type="Double" />
+          <Property Name="ToplamTutar" Type="Double" />
+          <Property Name="Satir" Type="Int32" />
+          <Property Name="StokMiktarID" Type="Int32" />
+        </EntityType>
+        <EntityType Name="StyStokMiktar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="StokKodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BirimMiktar" Type="Double" />
+          <Property Name="KasaMiktar" Type="Double" />
+          <Property Name="IadeKasaMiktar" Type="Double" />
+          <Property Name="DepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="BirmFiyat" Type="Double" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="CariKod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="StyKasaMiktar">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="GirisCikis" Type="Byte" />
+          <Property Name="CariKod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Miktar" Type="Double" />
+        </EntityType>
+        <EntityType Name="StyOdemeTanim">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="No" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tanim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="StyOdemeHareket">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="FatRec" Type="Int32" />
+          <Property Name="OdemeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tutar" Type="Double" />
+          <Property Name="Aciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="HKSDBModelStoreContainer" CdmEntityContainer="HKSDBEntities">
+          <EntitySetMapping Name="FirmaBilgileri">
+            <EntityTypeMapping TypeName="HKSDBModel.FirmaBilgisi">
+              <MappingFragment StoreEntitySet="FIRMABILGILERI">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TcVgNo" ColumnName="TCVGNO" />
+                <ScalarProperty Name="Unvani" ColumnName="UNVANI" />
+                <ScalarProperty Name="EPosta" ColumnName="EPOSTA" />
+                <ScalarProperty Name="Gsm" ColumnName="GSMNO" />
+                <ScalarProperty Name="Sifat1" ColumnName="SIFATI" />
+                <ScalarProperty Name="Sifat2" ColumnName="SIFAT2" />
+                <ScalarProperty Name="Sifre" ColumnName="SIFRE" />
+                <ScalarProperty Name="ServisSifresi" ColumnName="SERVISSIFRESI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSBeldeler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSBelde">
+              <MappingFragment StoreEntitySet="HKSBELDELER">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSBildirimler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSBildirim">
+              <MappingFragment StoreEntitySet="HKSBILDIRIM">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSBirimler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSBirim">
+              <MappingFragment StoreEntitySet="HKSBIRIM">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSCinsler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSCins">
+              <MappingFragment StoreEntitySet="HKSCINS">
+                <ScalarProperty Name="UrunKodu" ColumnName="URUNKODU" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Ithalmi" ColumnName="ITHALMI" />
+                <ScalarProperty Name="UretimSekliID" ColumnName="URETIMSEKLIID" />
+                <ScalarProperty Name="CinsAdi" ColumnName="CINSADI" />
+                <ScalarProperty Name="UrunID" ColumnName="URUNID" />
+                <ScalarProperty Name="UrunAdi" ColumnName="URUNADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSIlceler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSIlce">
+              <MappingFragment StoreEntitySet="HKSILCELER">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSIller">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSIL">
+              <MappingFragment StoreEntitySet="HKSILLER">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSIsletmeler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSIsletme">
+              <MappingFragment StoreEntitySet="HKSISLETME">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSStoklar">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSStok">
+              <MappingFragment StoreEntitySet="HKSSTOK">
+                <ScalarProperty Name="VergiOran" ColumnName="VERGIORAN" />
+                <ScalarProperty Name="MagazacilikOran" ColumnName="MAGAZACILIKORAN" />
+                <ScalarProperty Name="IslemePaketlemeOran" ColumnName="ISLEMEPAKETLEMEORAN" />
+                <ScalarProperty Name="NakliyeDepolamaOran" ColumnName="NAKLIYEDEPOLAMAORAN" />
+                <ScalarProperty Name="MasrafOrani" ColumnName="MASRAFORAN" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSSubeler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSSube">
+              <MappingFragment StoreEntitySet="HKSSUBE">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Adres" ColumnName="ADRES" />
+                <ScalarProperty Name="BeldeID" ColumnName="BELDEID" />
+                <ScalarProperty Name="IlceID" ColumnName="ILCEID" />
+                <ScalarProperty Name="IlID" ColumnName="ILID" />
+                <ScalarProperty Name="IsYeriTuru" ColumnName="ISYERITURU" />
+                <ScalarProperty Name="SubeAdi" ColumnName="SUBEADI" />
+		        <ScalarProperty Name="BelgeNoSubeSevk" ColumnName="BelgeNoSubeSevk" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSUretimSekilleri">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSUretimSekli">
+              <MappingFragment StoreEntitySet="HKSURETIMSEKLI">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UretimSekliAdi" ColumnName="UretimSekliAdi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HKSBelgeler">
+            <EntityTypeMapping TypeName="HKSDBModel.HKSBelge">
+              <MappingFragment StoreEntitySet="HKSBELGE">
+                <ScalarProperty Name="Belge" ColumnName="BELGE" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HksSevkler">
+            <EntityTypeMapping TypeName="HKSDBModel.HksSevk">
+              <MappingFragment StoreEntitySet="HKSSEVK">
+                <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+                <ScalarProperty Name="HksHataAciklama" ColumnName="HksHataAciklama" />
+                <ScalarProperty Name="HksHataKodu" ColumnName="HksHataKodu" />
+                <ScalarProperty Name="UretimSekli" ColumnName="UretimSekli" />
+                <ScalarProperty Name="UretimBeldeId" ColumnName="UretimBeldeId" />
+                <ScalarProperty Name="UretimIlceId" ColumnName="UretimIlceId" />
+                <ScalarProperty Name="UretimIlId" ColumnName="UretimIlId" />
+                <ScalarProperty Name="UreticisininAdUnvani" ColumnName="UreticisininAdUnvani" />
+                <ScalarProperty Name="UreticiTcKimlikVergiNo" ColumnName="UreticiTcKimlikVergiNo" />
+                <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+                <ScalarProperty Name="Sifat" ColumnName="Sifat" />
+                <ScalarProperty Name="RusumMiktari" ColumnName="RusumMiktari" />
+                <ScalarProperty Name="MiktarBirimId" ColumnName="MiktarBirimId" />
+                <ScalarProperty Name="MiktarBirimiAd" ColumnName="MiktarBirimiAd" />
+                <ScalarProperty Name="MalinTuruKodNo" ColumnName="MalinTuruKodNo" />
+                <ScalarProperty Name="MalinTuru" ColumnName="MalinTuru" />
+                <ScalarProperty Name="MalinSatisFiyati" ColumnName="MalinSatisFiyati" />
+                <ScalarProperty Name="MalinSahibAdi" ColumnName="MalinSahibAdi" />
+                <ScalarProperty Name="MalinSahibiTcKimlikVergiNo" ColumnName="MalinSahibiTcKimlikVergiNo" />
+                <ScalarProperty Name="MalinMiktari" ColumnName="MalinMiktari" />
+                <ScalarProperty Name="MalinKodNo" ColumnName="MalinKodNo" />
+                <ScalarProperty Name="MalinCinsKodNo" ColumnName="MalinCinsKodNo" />
+                <ScalarProperty Name="MalinCinsi" ColumnName="MalinCinsi" />
+                <ScalarProperty Name="MalinAdi" ColumnName="MalinAdi" />
+                <ScalarProperty Name="NihaiKunyeNo" ColumnName="NihaiKunyeNo" />
+                <ScalarProperty Name="KunyeNo" ColumnName="KunyeNo" />
+                <ScalarProperty Name="GidecekIsyeriId" ColumnName="GidecekIsyeriId" />
+                <ScalarProperty Name="BildirimTuru" ColumnName="BildirimTuru" />
+                <ScalarProperty Name="BildirimTarihi" ColumnName="BildirimTarihi" />
+                <ScalarProperty Name="BildirimciTcKimlikVergiNo" ColumnName="BildirimciTcKimlikVergiNo" />
+                <ScalarProperty Name="BelgeTipi" ColumnName="BelgeTipi" />
+                <ScalarProperty Name="BelgeNo" ColumnName="BelgeNo" />
+                <ScalarProperty Name="AracPlakaNo" ColumnName="AracPlakaNo" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ilkBildirimTarihi" ColumnName="ilkBildirimTarihi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyStoklar">
+            <EntityTypeMapping TypeName="HKSDBModel.StyStok">
+              <MappingFragment StoreEntitySet="STY_STOK">
+                <ScalarProperty Name="Fiyat" ColumnName="FIYAT" />
+                <ScalarProperty Name="Katsayi4" ColumnName="KATSAYI4" />
+                <ScalarProperty Name="Birim4" ColumnName="BIRIM4" />
+                <ScalarProperty Name="Katsayi3" ColumnName="KATSAYI3" />
+                <ScalarProperty Name="Birim3" ColumnName="BIRIM3" />
+                <ScalarProperty Name="Katsayi2" ColumnName="KATSAYI2" />
+                <ScalarProperty Name="Birim2" ColumnName="BIRIM2" />
+                <ScalarProperty Name="Katsayi1" ColumnName="KATSAYI1" />
+                <ScalarProperty Name="Birim1" ColumnName="BIRIM1" />
+                <ScalarProperty Name="KdvOran" ColumnName="KDVORAN" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+                <ScalarProperty Name="Kodu" ColumnName="KODU" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyCariler">
+            <EntityTypeMapping TypeName="HKSDBModel.StyCari">
+              <MappingFragment StoreEntitySet="STY_CARI">
+                <ScalarProperty Name="SevkAdres" ColumnName="SEVKADRES" />
+                <ScalarProperty Name="SevkAdresIlce" ColumnName="SEVKADRES_ILCE" />
+                <ScalarProperty Name="SevkAdresIL" ColumnName="SEVKADRES_IL" />
+                <ScalarProperty Name="FaturaAdres" ColumnName="FATURAADRES" />
+                <ScalarProperty Name="FaturaAdresIlce" ColumnName="FATURAADRES_ILCE" />
+                <ScalarProperty Name="FaturaAdres_IL" ColumnName="FATURAADRES_IL" />
+                <ScalarProperty Name="Adi" ColumnName="ADI" />
+                <ScalarProperty Name="Kodu" ColumnName="KODU" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyDepolar">
+            <EntityTypeMapping TypeName="HKSDBModel.StyDepo">
+              <MappingFragment StoreEntitySet="STY_DEPO">
+                <ScalarProperty Name="DepoTanim" ColumnName="DEPO_TANIM" />
+                <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyKasalar">
+            <EntityTypeMapping TypeName="HKSDBModel.StyKasa">
+              <MappingFragment StoreEntitySet="STY_KASA">
+                <ScalarProperty Name="Iadelimi" ColumnName="IADE" />
+                <ScalarProperty Name="Tanim" ColumnName="TANIM" />
+                <ScalarProperty Name="No" ColumnName="NO" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyFaturaHareketleri">
+            <EntityTypeMapping TypeName="HKSDBModel.StyFaturaHareket">
+              <MappingFragment StoreEntitySet="STY_FATURA_HAREKET">
+                <ScalarProperty Name="IcerikMiktar" ColumnName="ICERIK_MIKTAR" />
+                <ScalarProperty Name="IadeKasaTutar" ColumnName="IADE_KASA_TUTAR" />
+                <ScalarProperty Name="IadeKasaFiyat" ColumnName="IADE_KASA_FIYAT" />
+                <ScalarProperty Name="IadeKasaMiktar" ColumnName="IADE_KASA_MIKTAR" />
+                <ScalarProperty Name="IadeKasaNo" ColumnName="IADE_KASANO" />
+                <ScalarProperty Name="KasaTutar" ColumnName="KASA_TUTAR" />
+                <ScalarProperty Name="KasaFiyat" ColumnName="KASA_FIYAT" />
+                <ScalarProperty Name="KasaMiktar" ColumnName="KASA_MIKTAR" />
+                <ScalarProperty Name="KasaNo" ColumnName="KASANO" />
+                <ScalarProperty Name="Tutar" ColumnName="TUTAR" />
+                <ScalarProperty Name="KdvTutar" ColumnName="KDVTUTAR" />
+                <ScalarProperty Name="KdvOran" ColumnName="KDVORAN" />
+                <ScalarProperty Name="Fiyat" ColumnName="FIYAT" />
+                <ScalarProperty Name="Miktar" ColumnName="MIKTAR" />
+                <ScalarProperty Name="Birim" ColumnName="BIRIM" />
+                <ScalarProperty Name="StokKodu" ColumnName="STOK_KODU" />
+                <ScalarProperty Name="FatRec" ColumnName="FAT_REC" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyFaturalar">
+            <EntityTypeMapping TypeName="HKSDBModel.StyFatura">
+              <MappingFragment StoreEntitySet="STY_FATURA_UST">
+                <ScalarProperty Name="IadeKasaKdvTutar" ColumnName="IADE_KASA_KDV_TOPLAM" />
+                <ScalarProperty Name="NakliyeToplam" ColumnName="NAKLIYE_TOPLAM" />
+                <ScalarProperty Name="HammaliyeKdvToplam" ColumnName="HAMMALIYE_KDV_TOPLAM" />
+                <ScalarProperty Name="HammaliyeToplam" ColumnName="HAMMALIYE_TOPLAM" />
+                <ScalarProperty Name="RusumKdvToplam" ColumnName="RUSUM_KDV_TOPLAM" />
+                <ScalarProperty Name="RusumToplam" ColumnName="RUSUM_TOPLAM" />
+                <ScalarProperty Name="Yekun" ColumnName="YEKUN" />
+                <ScalarProperty Name="KdvToplam" ColumnName="KDV_TOPLAM" />
+                <ScalarProperty Name="AraToplam" ColumnName="ARATOPLAM" />
+                <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+                <ScalarProperty Name="CariKod" ColumnName="CARI_KOD" />
+                <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+                <ScalarProperty Name="BelgeNo" ColumnName="BELGENO" />
+                <ScalarProperty Name="Sira" ColumnName="SIRA" />
+                <ScalarProperty Name="Seri" ColumnName="SERI" />
+                <ScalarProperty Name="BelgeTipi" ColumnName="BELGE_TIPI" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StySevkHareketleri">
+            <EntityTypeMapping TypeName="HKSDBModel.StySevkHareket">
+              <MappingFragment StoreEntitySet="STY_SEVK_HAREKET">
+                <ScalarProperty Name="StokMiktarID" ColumnName="STOK_MIKTAR_ID" />
+                <ScalarProperty Name="Satir" ColumnName="SATIR" />
+                <ScalarProperty Name="ToplamTutar" ColumnName="TOPLAM_TUTAR" />
+                <ScalarProperty Name="BirimFiyat" ColumnName="BIRIM_FIYAT" />
+                <ScalarProperty Name="UrunMiktar" ColumnName="URUN_MIKTAR" />
+                <ScalarProperty Name="KasaMiktar" ColumnName="KASA_MIKTAR" />
+                <ScalarProperty Name="KasaNo" ColumnName="KASA_NO" />
+                <ScalarProperty Name="GirisDepoNo" ColumnName="GIRIS_DEPO_NO" />
+                <ScalarProperty Name="CikisDepoNo" ColumnName="CIKIS_DEPO_NO" />
+                <ScalarProperty Name="StokKodu" ColumnName="STOK_KODU" />
+                <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+                <ScalarProperty Name="Sira" ColumnName="SIRA" />
+                <ScalarProperty Name="Seri" ColumnName="SERI" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyStokMiktarlar">
+            <EntityTypeMapping TypeName="HKSDBModel.StyStokMiktar">
+              <MappingFragment StoreEntitySet="STY_STOK_MIKTAR">
+                <ScalarProperty Name="CariKod" ColumnName="CARI_KOD" />
+                <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+                <ScalarProperty Name="BirmFiyat" ColumnName="BIRIM_FIYAT" />
+                <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+                <ScalarProperty Name="IadeKasaMiktar" ColumnName="IADE_KASA_MIKTAR" />
+                <ScalarProperty Name="KasaMiktar" ColumnName="KASA_MIKTAR" />
+                <ScalarProperty Name="BirimMiktar" ColumnName="BIRIM_MIKTAR" />
+                <ScalarProperty Name="StokKodu" ColumnName="STOK_KODU" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyKasaMiktarlar">
+            <EntityTypeMapping TypeName="HKSDBModel.StyKasaMiktar">
+              <MappingFragment StoreEntitySet="STY_KASA_MIKTAR">
+                <ScalarProperty Name="Miktar" ColumnName="MIKTAR" />
+                <ScalarProperty Name="KasaNo" ColumnName="KASA_NO" />
+                <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+                <ScalarProperty Name="CariKod" ColumnName="CARI_KOD" />
+                <ScalarProperty Name="GirisCikis" ColumnName="GIRIS_CIKIS" />
+                <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyOdemeTanimlari">
+            <EntityTypeMapping TypeName="HKSDBModel.StyOdemeTanim">
+              <MappingFragment StoreEntitySet="STY_ODEME_TANIM">
+                <ScalarProperty Name="Tanim" ColumnName="TANIM" />
+                <ScalarProperty Name="No" ColumnName="NO" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StyOdemeHareketleri">
+            <EntityTypeMapping TypeName="HKSDBModel.StyOdemeHareket">
+              <MappingFragment StoreEntitySet="STY_ODEME_HAREKET">
+                <ScalarProperty Name="Aciklama" ColumnName="ACIKLAMA" />
+                <ScalarProperty Name="Tutar" ColumnName="TUTAR" />
+                <ScalarProperty Name="OdemeNo" ColumnName="ODEME_NO" />
+                <ScalarProperty Name="FatRec" ColumnName="FAT_REC" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="False" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <edmx:DesignerProperty Name="UseLegacyProvider" Value="True" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="HKSMODEL">
+        <edmx:EntityTypeShape EntityType="HKSDBModel.FirmaBilgisi" Width="1.5" PointX="0.75" PointY="0.75" Height="2.7494921874999996" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSBelde" Width="1.5" PointX="2.75" PointY="0.75" Height="1.4033821614583335" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSBildirim" Width="1.5" PointX="4.375" PointY="0.75" Height="1.4033821614583335" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSBirim" Width="1.5" PointX="2.75" PointY="1.375" Height="1.4033821614583317" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSCins" Width="1.5" PointX="6" PointY="0.75" Height="2.1725878906249996" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSIlce" Width="1.5" PointX="6" PointY="1.375" Height="1.4033821614583317" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSIL" Width="1.5" PointX="7.625" PointY="1.375" Height="1.4033821614583317" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSIsletme" Width="1.5" PointX="4.375" PointY="1.375" Height="1.4033821614583317" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSStok" Width="1.5" PointX="9.25" PointY="1.375" Height="1.4033821614583317" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSSube" Width="1.5" PointX="10.875" PointY="1.375" Height="2.3648893229166674" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSUretimSekli" Width="1.5" PointX="7.625" PointY="0.75" Height="1.4033821614583317" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HKSBelge" Width="1.5" PointX="0.625" PointY="1.75" Height="1.4033821614583388" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.HksSevk" Width="1.5" PointX="10.875" PointY="0.75" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyStok" Width="1.5" PointX="0.625" PointY="2.5" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyCari" Width="1.5" PointX="11" PointY="1.875" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyDepo" Width="1.5" PointX="4.375" PointY="2.375" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyKasa" Width="1.5" PointX="9.25" PointY="0.75" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyFaturaHareket" Width="2.75" PointX="4.875" PointY="1.875" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyFatura" Width="2" PointX="2.75" PointY="1.875" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StySevkHareket" Width="1.5" PointX="2.75" PointY="2.375" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyStokMiktar" Width="1.5" PointX="0.625" PointY="3.25" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyKasaMiktar" Width="1.5" PointX="9.375" PointY="1.875" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyOdemeTanim" Width="1.5" PointX="6" PointY="2.375" IsExpanded="false" />
+        <edmx:EntityTypeShape EntityType="HKSDBModel.StyOdemeHareket" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="false" />
+      </edmx:Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

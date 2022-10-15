@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HKSDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="FIRMABILGILERI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TCVGNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="UNVANI" Type="nvarchar" MaxLength="350" />
+    <Property Name="EPOSTA" Type="nvarchar" MaxLength="50" />
+    <Property Name="GSMNO" Type="nvarchar" MaxLength="50" />
+    <Property Name="SIFATI" Type="int" />
+    <Property Name="SIFAT2" Type="int" />
+    <Property Name="SIFRE" Type="nvarchar" MaxLength="50" />
+    <Property Name="SERVISSIFRESI" Type="nvarchar" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="HKSBELDELER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HKSBELGE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="BELGE" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="HKSBILDIRIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADI" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HKSBIRIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="HKSCINS">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ITHALMI" Type="bit" />
+    <Property Name="URETIMSEKLIID" Type="int" />
+    <Property Name="CINSADI" Type="varchar" MaxLength="1000" />
+    <Property Name="URUNID" Type="int" />
+    <Property Name="URUNADI" Type="varchar" MaxLength="1000" />
+    <Property Name="URUNKODU" Type="varchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="HKSILCELER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HKSILLER">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="HKSISLETME">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="600" />
+  </EntityType>
+  <EntityType Name="HKSSEVK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AracPlakaNo" Type="varchar" MaxLength="50" />
+    <Property Name="BelgeNo" Type="varchar" MaxLength="50" />
+    <Property Name="BelgeTipi" Type="int" />
+    <Property Name="BildirimciTcKimlikVergiNo" Type="varchar" MaxLength="50" />
+    <Property Name="KayitTarihi" Type="datetime" />
+    <Property Name="BildirimTarihi" Type="datetime" />
+    <Property Name="BildirimTuru" Type="int" />
+    <Property Name="GidecekIsyeriId" Type="int" />
+    <Property Name="KunyeNo" Type="varchar" MaxLength="50" />
+    <Property Name="NihaiKunyeNo" Type="varchar" MaxLength="50" />
+    <Property Name="MalinAdi" Type="varchar" MaxLength="250" />
+    <Property Name="MalinCinsi" Type="varchar" MaxLength="50" />
+    <Property Name="MalinCinsKodNo" Type="int" />
+    <Property Name="MalinKodNo" Type="int" />
+    <Property Name="MalinMiktari" Type="float" />
+    <Property Name="MalinSahibiTcKimlikVergiNo" Type="varchar" MaxLength="50" />
+    <Property Name="MalinSahibAdi" Type="varchar" MaxLength="150" />
+    <Property Name="MalinSatisFiyati" Type="float" />
+    <Property Name="MalinTuru" Type="varchar" MaxLength="50" />
+    <Property Name="MalinTuruKodNo" Type="int" />
+    <Property Name="MiktarBirimiAd" Type="varchar" MaxLength="50" />
+    <Property Name="MiktarBirimId" Type="int" />
+    <Property Name="RusumMiktari" Type="float" />
+    <Property Name="Sifat" Type="int" />
+    <Property Name="UniqueId" Type="varchar" MaxLength="50" />
+    <Property Name="UreticiTcKimlikVergiNo" Type="varchar" MaxLength="50" />
+    <Property Name="UreticisininAdUnvani" Type="varchar" MaxLength="150" />
+    <Property Name="UretimIlId" Type="int" />
+    <Property Name="UretimIlceId" Type="int" />
+    <Property Name="UretimBeldeId" Type="int" />
+    <Property Name="UretimSekli" Type="int" />
+    <Property Name="HksHataKodu" Type="int" />
+    <Property Name="HksHataAciklama" Type="varchar" MaxLength="250" />
+    <Property Name="ilkBildirimTarihi" Type="datetime" />
+  </EntityType>
+  <EntityType Name="HKSSTOK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="1000" />
+    <Property Name="MASRAFORAN" Type="float" />
+    <Property Name="NAKLIYEDEPOLAMAORAN" Type="float" />
+    <Property Name="ISLEMEPAKETLEMEORAN" Type="float" />
+    <Property Name="MAGAZACILIKORAN" Type="float" />
+    <Property Name="VERGIORAN" Type="float" />
+  </EntityType>
+  <EntityType Name="HKSSUBE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="ADRES" Type="nvarchar(max)" />
+    <Property Name="BELDEID" Type="int" />
+    <Property Name="ILCEID" Type="int" />
+    <Property Name="ILID" Type="int" />
+    <Property Name="ISYERITURU" Type="int" />
+    <Property Name="SUBEADI" Type="nvarchar" MaxLength="1000" />
+    <Property Name="BelgeNoSubeSevk" Type="varchar" MaxLength="25" />
+  </EntityType>
+  <EntityType Name="HKSURETIMSEKLI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="UretimSekliAdi" Type="varchar" MaxLength="250" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STY_CARI">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KODU" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="150" />
+    <Property Name="FATURAADRES_IL" Type="nvarchar" MaxLength="100" />
+    <Property Name="FATURAADRES_ILCE" Type="nvarchar" MaxLength="100" />
+    <Property Name="FATURAADRES" Type="nvarchar" MaxLength="100" />
+    <Property Name="SEVKADRES_IL" Type="nvarchar" MaxLength="100" />
+    <Property Name="SEVKADRES_ILCE" Type="nvarchar" MaxLength="100" />
+    <Property Name="SEVKADRES" Type="nvarchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="STY_DEPO">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DEPO_TANIM" Type="nvarchar" MaxLength="150" Nullable="false" />
+  </EntityType>
+  <EntityType Name="STY_FATURA_HAREKET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FAT_REC" Type="int" />
+    <Property Name="STOK_KODU" Type="nvarchar" MaxLength="50" />
+    <Property Name="BIRIM" Type="nvarchar" MaxLength="50" />
+    <Property Name="MIKTAR" Type="float" />
+    <Property Name="ICERIK_MIKTAR" Type="float" />
+    <Property Name="FIYAT" Type="float" />
+    <Property Name="KDVORAN" Type="float" />
+    <Property Name="KDVTUTAR" Type="float" />
+    <Property Name="TUTAR" Type="float" />
+    <Property Name="KASANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="KASA_MIKTAR" Type="float" />
+    <Property Name="KASA_FIYAT" Type="float" />
+    <Property Name="KASA_TUTAR" Type="float" />
+    <Property Name="IADE_KASANO" Type="nvarchar" MaxLength="50" />
+    <Property Name="IADE_KASA_MIKTAR" Type="float" />
+    <Property Name="IADE_KASA_FIYAT" Type="float" />
+    <Property Name="IADE_KASA_TUTAR" Type="float" />
+  </EntityType>
+  <EntityType Name="STY_FATURA_UST">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BELGE_TIPI" Type="tinyint" />
+    <Property Name="SERI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SIRA" Type="int" />
+    <Property Name="BELGENO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TARIH" Type="datetime" />
+    <Property Name="CARI_KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="ARATOPLAM" Type="float" />
+    <Property Name="KDV_TOPLAM" Type="float" />
+    <Property Name="YEKUN" Type="float" />
+    <Property Name="RUSUM_TOPLAM" Type="float" />
+    <Property Name="RUSUM_KDV_TOPLAM" Type="float" />
+    <Property Name="HAMMALIYE_TOPLAM" Type="float" />
+    <Property Name="HAMMALIYE_KDV_TOPLAM" Type="float" />
+    <Property Name="NAKLIYE_TOPLAM" Type="float" />
+    <Property Name="IADE_KASA_KDV_TOPLAM" Type="float" />
+  </EntityType>
+  <EntityType Name="STY_KASA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TANIM" Type="nvarchar" MaxLength="50" />
+    <Property Name="IADE" Type="bit" />
+  </EntityType>
+  <EntityType Name="STY_KASA_MIKTAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TARIH" Type="datetime" />
+    <Property Name="GIRIS_CIKIS" Type="tinyint" />
+    <Property Name="CARI_KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="KASA_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="MIKTAR" Type="float" />
+  </EntityType>
+  <EntityType Name="STY_ODEME_HAREKET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FAT_REC" Type="int" />
+    <Property Name="ODEME_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TUTAR" Type="float" />
+    <Property Name="ACIKLAMA" Type="nvarchar" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="STY_ODEME_TANIM">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="TANIM" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="STY_SEVK_HAREKET">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SERI" Type="nvarchar" MaxLength="50" />
+    <Property Name="SIRA" Type="int" />
+    <Property Name="SATIR" Type="int" />
+    <Property Name="TARIH" Type="datetime" />
+    <Property Name="STOK_KODU" Type="nvarchar" MaxLength="50" />
+    <Property Name="CIKIS_DEPO_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="GIRIS_DEPO_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="KASA_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="KASA_MIKTAR" Type="float" />
+    <Property Name="URUN_MIKTAR" Type="float" />
+    <Property Name="BIRIM_FIYAT" Type="float" />
+    <Property Name="TOPLAM_TUTAR" Type="float" />
+    <Property Name="STOK_MIKTAR_ID" Type="int" />
+  </EntityType>
+  <EntityType Name="STY_STOK">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KODU" Type="nvarchar" MaxLength="50" />
+    <Property Name="ADI" Type="nvarchar" MaxLength="150" />
+    <Property Name="KDVORAN" Type="float" />
+    <Property Name="FIYAT" Type="float" />
+    <Property Name="BIRIM1" Type="nvarchar" MaxLength="50" />
+    <Property Name="KATSAYI1" Type="float" />
+    <Property Name="BIRIM2" Type="nvarchar" MaxLength="50" />
+    <Property Name="KATSAYI2" Type="float" />
+    <Property Name="BIRIM3" Type="nvarchar" MaxLength="50" />
+    <Property Name="KATSAYI3" Type="float" />
+    <Property Name="BIRIM4" Type="nvarchar" MaxLength="50" />
+    <Property Name="KATSAYI4" Type="float" />
+  </EntityType>
+  <EntityType Name="STY_STOK_MIKTAR">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TARIH" Type="datetime" />
+    <Property Name="CARI_KOD" Type="nvarchar" MaxLength="50" />
+    <Property Name="DEPO_NO" Type="nvarchar" MaxLength="50" />
+    <Property Name="STOK_KODU" Type="nvarchar" MaxLength="50" />
+    <Property Name="BIRIM_FIYAT" Type="float" />
+    <Property Name="BIRIM_MIKTAR" Type="float" />
+    <Property Name="KASA_MIKTAR" Type="float" />
+    <Property Name="IADE_KASA_MIKTAR" Type="float" />
+  </EntityType>
+  <EntityContainer Name="HKSDBModelStoreContainer">
+    <EntitySet Name="FIRMABILGILERI" EntityType="Self.FIRMABILGILERI" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSBELDELER" EntityType="Self.HKSBELDELER" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSBELGE" EntityType="Self.HKSBELGE" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSBILDIRIM" EntityType="Self.HKSBILDIRIM" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSBIRIM" EntityType="Self.HKSBIRIM" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSCINS" EntityType="Self.HKSCINS" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSILCELER" EntityType="Self.HKSILCELER" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSILLER" EntityType="Self.HKSILLER" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSISLETME" EntityType="Self.HKSISLETME" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSSEVK" EntityType="Self.HKSSEVK" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSSTOK" EntityType="Self.HKSSTOK" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSSUBE" EntityType="Self.HKSSUBE" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="HKSURETIMSEKLI" EntityType="Self.HKSURETIMSEKLI" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_CARI" EntityType="Self.STY_CARI" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_DEPO" EntityType="Self.STY_DEPO" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_FATURA_HAREKET" EntityType="Self.STY_FATURA_HAREKET" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_FATURA_UST" EntityType="Self.STY_FATURA_UST" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_KASA" EntityType="Self.STY_KASA" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_KASA_MIKTAR" EntityType="Self.STY_KASA_MIKTAR" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_ODEME_HAREKET" EntityType="Self.STY_ODEME_HAREKET" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_ODEME_TANIM" EntityType="Self.STY_ODEME_TANIM" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_SEVK_HAREKET" EntityType="Self.STY_SEVK_HAREKET" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_STOK" EntityType="Self.STY_STOK" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="STY_STOK_MIKTAR" EntityType="Self.STY_STOK_MIKTAR" Schema="dbo" store:Type="Tables" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+  </EntityContainer>
+</Schema>

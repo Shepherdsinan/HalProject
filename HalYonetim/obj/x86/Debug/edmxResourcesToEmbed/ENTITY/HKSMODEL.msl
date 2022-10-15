@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HKSDBModelStoreContainer" CdmEntityContainer="HKSDBEntities">
+    <EntitySetMapping Name="FirmaBilgileri">
+      <EntityTypeMapping TypeName="HKSDBModel.FirmaBilgisi">
+        <MappingFragment StoreEntitySet="FIRMABILGILERI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TcVgNo" ColumnName="TCVGNO" />
+          <ScalarProperty Name="Unvani" ColumnName="UNVANI" />
+          <ScalarProperty Name="EPosta" ColumnName="EPOSTA" />
+          <ScalarProperty Name="Gsm" ColumnName="GSMNO" />
+          <ScalarProperty Name="Sifat1" ColumnName="SIFATI" />
+          <ScalarProperty Name="Sifat2" ColumnName="SIFAT2" />
+          <ScalarProperty Name="Sifre" ColumnName="SIFRE" />
+          <ScalarProperty Name="ServisSifresi" ColumnName="SERVISSIFRESI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSBeldeler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSBelde">
+        <MappingFragment StoreEntitySet="HKSBELDELER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSBildirimler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSBildirim">
+        <MappingFragment StoreEntitySet="HKSBILDIRIM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSBirimler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSBirim">
+        <MappingFragment StoreEntitySet="HKSBIRIM">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSCinsler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSCins">
+        <MappingFragment StoreEntitySet="HKSCINS">
+          <ScalarProperty Name="UrunKodu" ColumnName="URUNKODU" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Ithalmi" ColumnName="ITHALMI" />
+          <ScalarProperty Name="UretimSekliID" ColumnName="URETIMSEKLIID" />
+          <ScalarProperty Name="CinsAdi" ColumnName="CINSADI" />
+          <ScalarProperty Name="UrunID" ColumnName="URUNID" />
+          <ScalarProperty Name="UrunAdi" ColumnName="URUNADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSIlceler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSIlce">
+        <MappingFragment StoreEntitySet="HKSILCELER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSIller">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSIL">
+        <MappingFragment StoreEntitySet="HKSILLER">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSIsletmeler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSIsletme">
+        <MappingFragment StoreEntitySet="HKSISLETME">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSStoklar">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSStok">
+        <MappingFragment StoreEntitySet="HKSSTOK">
+          <ScalarProperty Name="VergiOran" ColumnName="VERGIORAN" />
+          <ScalarProperty Name="MagazacilikOran" ColumnName="MAGAZACILIKORAN" />
+          <ScalarProperty Name="IslemePaketlemeOran" ColumnName="ISLEMEPAKETLEMEORAN" />
+          <ScalarProperty Name="NakliyeDepolamaOran" ColumnName="NAKLIYEDEPOLAMAORAN" />
+          <ScalarProperty Name="MasrafOrani" ColumnName="MASRAFORAN" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSSubeler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSSube">
+        <MappingFragment StoreEntitySet="HKSSUBE">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Adres" ColumnName="ADRES" />
+          <ScalarProperty Name="BeldeID" ColumnName="BELDEID" />
+          <ScalarProperty Name="IlceID" ColumnName="ILCEID" />
+          <ScalarProperty Name="IlID" ColumnName="ILID" />
+          <ScalarProperty Name="IsYeriTuru" ColumnName="ISYERITURU" />
+          <ScalarProperty Name="SubeAdi" ColumnName="SUBEADI" />
+          <ScalarProperty Name="BelgeNoSubeSevk" ColumnName="BelgeNoSubeSevk" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSUretimSekilleri">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSUretimSekli">
+        <MappingFragment StoreEntitySet="HKSURETIMSEKLI">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UretimSekliAdi" ColumnName="UretimSekliAdi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HKSBelgeler">
+      <EntityTypeMapping TypeName="HKSDBModel.HKSBelge">
+        <MappingFragment StoreEntitySet="HKSBELGE">
+          <ScalarProperty Name="Belge" ColumnName="BELGE" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HksSevkler">
+      <EntityTypeMapping TypeName="HKSDBModel.HksSevk">
+        <MappingFragment StoreEntitySet="HKSSEVK">
+          <ScalarProperty Name="KayitTarihi" ColumnName="KayitTarihi" />
+          <ScalarProperty Name="HksHataAciklama" ColumnName="HksHataAciklama" />
+          <ScalarProperty Name="HksHataKodu" ColumnName="HksHataKodu" />
+          <ScalarProperty Name="UretimSekli" ColumnName="UretimSekli" />
+          <ScalarProperty Name="UretimBeldeId" ColumnName="UretimBeldeId" />
+          <ScalarProperty Name="UretimIlceId" ColumnName="UretimIlceId" />
+          <ScalarProperty Name="UretimIlId" ColumnName="UretimIlId" />
+          <ScalarProperty Name="UreticisininAdUnvani" ColumnName="UreticisininAdUnvani" />
+          <ScalarProperty Name="UreticiTcKimlikVergiNo" ColumnName="UreticiTcKimlikVergiNo" />
+          <ScalarProperty Name="UniqueId" ColumnName="UniqueId" />
+          <ScalarProperty Name="Sifat" ColumnName="Sifat" />
+          <ScalarProperty Name="RusumMiktari" ColumnName="RusumMiktari" />
+          <ScalarProperty Name="MiktarBirimId" ColumnName="MiktarBirimId" />
+          <ScalarProperty Name="MiktarBirimiAd" ColumnName="MiktarBirimiAd" />
+          <ScalarProperty Name="MalinTuruKodNo" ColumnName="MalinTuruKodNo" />
+          <ScalarProperty Name="MalinTuru" ColumnName="MalinTuru" />
+          <ScalarProperty Name="MalinSatisFiyati" ColumnName="MalinSatisFiyati" />
+          <ScalarProperty Name="MalinSahibAdi" ColumnName="MalinSahibAdi" />
+          <ScalarProperty Name="MalinSahibiTcKimlikVergiNo" ColumnName="MalinSahibiTcKimlikVergiNo" />
+          <ScalarProperty Name="MalinMiktari" ColumnName="MalinMiktari" />
+          <ScalarProperty Name="MalinKodNo" ColumnName="MalinKodNo" />
+          <ScalarProperty Name="MalinCinsKodNo" ColumnName="MalinCinsKodNo" />
+          <ScalarProperty Name="MalinCinsi" ColumnName="MalinCinsi" />
+          <ScalarProperty Name="MalinAdi" ColumnName="MalinAdi" />
+          <ScalarProperty Name="NihaiKunyeNo" ColumnName="NihaiKunyeNo" />
+          <ScalarProperty Name="KunyeNo" ColumnName="KunyeNo" />
+          <ScalarProperty Name="GidecekIsyeriId" ColumnName="GidecekIsyeriId" />
+          <ScalarProperty Name="BildirimTuru" ColumnName="BildirimTuru" />
+          <ScalarProperty Name="BildirimTarihi" ColumnName="BildirimTarihi" />
+          <ScalarProperty Name="BildirimciTcKimlikVergiNo" ColumnName="BildirimciTcKimlikVergiNo" />
+          <ScalarProperty Name="BelgeTipi" ColumnName="BelgeTipi" />
+          <ScalarProperty Name="BelgeNo" ColumnName="BelgeNo" />
+          <ScalarProperty Name="AracPlakaNo" ColumnName="AracPlakaNo" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ilkBildirimTarihi" ColumnName="ilkBildirimTarihi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyStoklar">
+      <EntityTypeMapping TypeName="HKSDBModel.StyStok">
+        <MappingFragment StoreEntitySet="STY_STOK">
+          <ScalarProperty Name="Fiyat" ColumnName="FIYAT" />
+          <ScalarProperty Name="Katsayi4" ColumnName="KATSAYI4" />
+          <ScalarProperty Name="Birim4" ColumnName="BIRIM4" />
+          <ScalarProperty Name="Katsayi3" ColumnName="KATSAYI3" />
+          <ScalarProperty Name="Birim3" ColumnName="BIRIM3" />
+          <ScalarProperty Name="Katsayi2" ColumnName="KATSAYI2" />
+          <ScalarProperty Name="Birim2" ColumnName="BIRIM2" />
+          <ScalarProperty Name="Katsayi1" ColumnName="KATSAYI1" />
+          <ScalarProperty Name="Birim1" ColumnName="BIRIM1" />
+          <ScalarProperty Name="KdvOran" ColumnName="KDVORAN" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+          <ScalarProperty Name="Kodu" ColumnName="KODU" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyCariler">
+      <EntityTypeMapping TypeName="HKSDBModel.StyCari">
+        <MappingFragment StoreEntitySet="STY_CARI">
+          <ScalarProperty Name="SevkAdres" ColumnName="SEVKADRES" />
+          <ScalarProperty Name="SevkAdresIlce" ColumnName="SEVKADRES_ILCE" />
+          <ScalarProperty Name="SevkAdresIL" ColumnName="SEVKADRES_IL" />
+          <ScalarProperty Name="FaturaAdres" ColumnName="FATURAADRES" />
+          <ScalarProperty Name="FaturaAdresIlce" ColumnName="FATURAADRES_ILCE" />
+          <ScalarProperty Name="FaturaAdres_IL" ColumnName="FATURAADRES_IL" />
+          <ScalarProperty Name="Adi" ColumnName="ADI" />
+          <ScalarProperty Name="Kodu" ColumnName="KODU" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyDepolar">
+      <EntityTypeMapping TypeName="HKSDBModel.StyDepo">
+        <MappingFragment StoreEntitySet="STY_DEPO">
+          <ScalarProperty Name="DepoTanim" ColumnName="DEPO_TANIM" />
+          <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyKasalar">
+      <EntityTypeMapping TypeName="HKSDBModel.StyKasa">
+        <MappingFragment StoreEntitySet="STY_KASA">
+          <ScalarProperty Name="Iadelimi" ColumnName="IADE" />
+          <ScalarProperty Name="Tanim" ColumnName="TANIM" />
+          <ScalarProperty Name="No" ColumnName="NO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyFaturaHareketleri">
+      <EntityTypeMapping TypeName="HKSDBModel.StyFaturaHareket">
+        <MappingFragment StoreEntitySet="STY_FATURA_HAREKET">
+          <ScalarProperty Name="IcerikMiktar" ColumnName="ICERIK_MIKTAR" />
+          <ScalarProperty Name="IadeKasaTutar" ColumnName="IADE_KASA_TUTAR" />
+          <ScalarProperty Name="IadeKasaFiyat" ColumnName="IADE_KASA_FIYAT" />
+          <ScalarProperty Name="IadeKasaMiktar" ColumnName="IADE_KASA_MIKTAR" />
+          <ScalarProperty Name="IadeKasaNo" ColumnName="IADE_KASANO" />
+          <ScalarProperty Name="KasaTutar" ColumnName="KASA_TUTAR" />
+          <ScalarProperty Name="KasaFiyat" ColumnName="KASA_FIYAT" />
+          <ScalarProperty Name="KasaMiktar" ColumnName="KASA_MIKTAR" />
+          <ScalarProperty Name="KasaNo" ColumnName="KASANO" />
+          <ScalarProperty Name="Tutar" ColumnName="TUTAR" />
+          <ScalarProperty Name="KdvTutar" ColumnName="KDVTUTAR" />
+          <ScalarProperty Name="KdvOran" ColumnName="KDVORAN" />
+          <ScalarProperty Name="Fiyat" ColumnName="FIYAT" />
+          <ScalarProperty Name="Miktar" ColumnName="MIKTAR" />
+          <ScalarProperty Name="Birim" ColumnName="BIRIM" />
+          <ScalarProperty Name="StokKodu" ColumnName="STOK_KODU" />
+          <ScalarProperty Name="FatRec" ColumnName="FAT_REC" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyFaturalar">
+      <EntityTypeMapping TypeName="HKSDBModel.StyFatura">
+        <MappingFragment StoreEntitySet="STY_FATURA_UST">
+          <ScalarProperty Name="IadeKasaKdvTutar" ColumnName="IADE_KASA_KDV_TOPLAM" />
+          <ScalarProperty Name="NakliyeToplam" ColumnName="NAKLIYE_TOPLAM" />
+          <ScalarProperty Name="HammaliyeKdvToplam" ColumnName="HAMMALIYE_KDV_TOPLAM" />
+          <ScalarProperty Name="HammaliyeToplam" ColumnName="HAMMALIYE_TOPLAM" />
+          <ScalarProperty Name="RusumKdvToplam" ColumnName="RUSUM_KDV_TOPLAM" />
+          <ScalarProperty Name="RusumToplam" ColumnName="RUSUM_TOPLAM" />
+          <ScalarProperty Name="Yekun" ColumnName="YEKUN" />
+          <ScalarProperty Name="KdvToplam" ColumnName="KDV_TOPLAM" />
+          <ScalarProperty Name="AraToplam" ColumnName="ARATOPLAM" />
+          <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+          <ScalarProperty Name="CariKod" ColumnName="CARI_KOD" />
+          <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+          <ScalarProperty Name="BelgeNo" ColumnName="BELGENO" />
+          <ScalarProperty Name="Sira" ColumnName="SIRA" />
+          <ScalarProperty Name="Seri" ColumnName="SERI" />
+          <ScalarProperty Name="BelgeTipi" ColumnName="BELGE_TIPI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StySevkHareketleri">
+      <EntityTypeMapping TypeName="HKSDBModel.StySevkHareket">
+        <MappingFragment StoreEntitySet="STY_SEVK_HAREKET">
+          <ScalarProperty Name="StokMiktarID" ColumnName="STOK_MIKTAR_ID" />
+          <ScalarProperty Name="Satir" ColumnName="SATIR" />
+          <ScalarProperty Name="ToplamTutar" ColumnName="TOPLAM_TUTAR" />
+          <ScalarProperty Name="BirimFiyat" ColumnName="BIRIM_FIYAT" />
+          <ScalarProperty Name="UrunMiktar" ColumnName="URUN_MIKTAR" />
+          <ScalarProperty Name="KasaMiktar" ColumnName="KASA_MIKTAR" />
+          <ScalarProperty Name="KasaNo" ColumnName="KASA_NO" />
+          <ScalarProperty Name="GirisDepoNo" ColumnName="GIRIS_DEPO_NO" />
+          <ScalarProperty Name="CikisDepoNo" ColumnName="CIKIS_DEPO_NO" />
+          <ScalarProperty Name="StokKodu" ColumnName="STOK_KODU" />
+          <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+          <ScalarProperty Name="Sira" ColumnName="SIRA" />
+          <ScalarProperty Name="Seri" ColumnName="SERI" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyStokMiktarlar">
+      <EntityTypeMapping TypeName="HKSDBModel.StyStokMiktar">
+        <MappingFragment StoreEntitySet="STY_STOK_MIKTAR">
+          <ScalarProperty Name="CariKod" ColumnName="CARI_KOD" />
+          <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+          <ScalarProperty Name="BirmFiyat" ColumnName="BIRIM_FIYAT" />
+          <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+          <ScalarProperty Name="IadeKasaMiktar" ColumnName="IADE_KASA_MIKTAR" />
+          <ScalarProperty Name="KasaMiktar" ColumnName="KASA_MIKTAR" />
+          <ScalarProperty Name="BirimMiktar" ColumnName="BIRIM_MIKTAR" />
+          <ScalarProperty Name="StokKodu" ColumnName="STOK_KODU" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyKasaMiktarlar">
+      <EntityTypeMapping TypeName="HKSDBModel.StyKasaMiktar">
+        <MappingFragment StoreEntitySet="STY_KASA_MIKTAR">
+          <ScalarProperty Name="Miktar" ColumnName="MIKTAR" />
+          <ScalarProperty Name="KasaNo" ColumnName="KASA_NO" />
+          <ScalarProperty Name="DepoNo" ColumnName="DEPO_NO" />
+          <ScalarProperty Name="CariKod" ColumnName="CARI_KOD" />
+          <ScalarProperty Name="GirisCikis" ColumnName="GIRIS_CIKIS" />
+          <ScalarProperty Name="Tarih" ColumnName="TARIH" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyOdemeTanimlari">
+      <EntityTypeMapping TypeName="HKSDBModel.StyOdemeTanim">
+        <MappingFragment StoreEntitySet="STY_ODEME_TANIM">
+          <ScalarProperty Name="Tanim" ColumnName="TANIM" />
+          <ScalarProperty Name="No" ColumnName="NO" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StyOdemeHareketleri">
+      <EntityTypeMapping TypeName="HKSDBModel.StyOdemeHareket">
+        <MappingFragment StoreEntitySet="STY_ODEME_HAREKET">
+          <ScalarProperty Name="Aciklama" ColumnName="ACIKLAMA" />
+          <ScalarProperty Name="Tutar" ColumnName="TUTAR" />
+          <ScalarProperty Name="OdemeNo" ColumnName="ODEME_NO" />
+          <ScalarProperty Name="FatRec" ColumnName="FAT_REC" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

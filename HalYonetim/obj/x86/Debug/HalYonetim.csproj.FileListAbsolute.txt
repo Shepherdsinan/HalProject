@@ -1,0 +1,431 @@
+c:\users\hakan aksoy\documents\visual studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\HalYonetim.exe
+c:\users\hakan aksoy\documents\visual studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\HalYonetim.pdb
+c:\users\hakan aksoy\documents\visual studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.Properties.Resources.resources
+c:\users\hakan aksoy\documents\visual studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.csproj.GenerateResource.Cache
+c:\users\hakan aksoy\documents\visual studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.exe.licenses
+c:\users\hakan aksoy\documents\visual studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.exe
+c:\users\hakan aksoy\documents\visual studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.pdb
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\HalYonetim.exe.config
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.FrmMain.resources
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBildirim.resources
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.BonusSkins.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.Data.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.Printing.v13.2.Core.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.Utils.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraBars.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraEditors.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraGrid.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraLayout.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v13.2.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.Data.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.Printing.v13.2.Core.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.Utils.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraBars.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraEditors.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraGrid.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraLayout.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v13.2.xml
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.Data.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.Data.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.Data.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.Data.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.Printing.v13.2.Core.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.Printing.v13.2.Core.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.Printing.v13.2.Core.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.Printing.v13.2.Core.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.Utils.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.Utils.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.Utils.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.Utils.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.XtraBars.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.XtraBars.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.XtraBars.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.XtraBars.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.XtraEditors.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.XtraEditors.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.XtraEditors.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.XtraEditors.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.XtraGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.XtraGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.XtraGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.XtraGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.XtraLayout.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.XtraLayout.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.XtraLayout.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.XtraLayout.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\de\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\es\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ja\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\bin\Debug\ru\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.FrmDatabaseAyar.resources
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.FrmFirmaAyar.resources
+C:\Users\Hakan AKSOY\Documents\Visual Studio 2010\Projects\HalYonetim\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBilgiVeriIndir.resources
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.exe
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.exe.config
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.BonusSkins.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.Printing.v13.2.Core.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.Utils.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraBars.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraEditors.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraGrid.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraLayout.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v13.2.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\FastReport.Bars.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\FastReport.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\FastReport.Editor.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.Printing.v13.2.Core.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.Utils.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraBars.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraEditors.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraGrid.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraLayout.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v13.2.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\FastReport.xml
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Data.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Data.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Data.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Data.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Printing.v13.2.Core.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Printing.v13.2.Core.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Printing.v13.2.Core.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Printing.v13.2.Core.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Utils.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Utils.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Utils.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Utils.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraBars.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraBars.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraBars.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraBars.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraEditors.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraEditors.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraEditors.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraEditors.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraLayout.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraLayout.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraLayout.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraLayout.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraPrinting.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraVerticalGrid.v13.2.resources.dll
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.Etiket.FrmEtiketDizayn.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmBildirimListesi.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmKunyeErit.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmHata.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksSevk.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmDatabaseAyar.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmEtiketYazdir.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmFirmaAyar.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBildirim.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBilgiVeriIndir.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmMagazaSevk.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmMain.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmMasrafOran.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmProgramAyarlari.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmRapor.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmUserControl.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmCariTanitim.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmDepoTanitim.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmFatura.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmKasaTanim.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmKasaTransfer.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmListe.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokEldekiMiktar.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokTanitim.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokTransfer.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Properties.Resources.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Rapor.FrmRaporFiltre.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Rapor.FrmRaporGoruntule.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.GenerateResource.Cache
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.exe.licenses
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.exe
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.pdb
+C:\WORKSPACE\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.pdb
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csprojResolveAssemblyReference.cache
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmOdemeTanim.resources
+C:\WORKSPACE\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmTediye.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.exe.config
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.exe
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.pdb
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.BonusSkins.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.Desktop.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Office.v20.1.Core.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v20.1.Core.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Printing.v20.1.Core.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.RichEdit.v20.1.Core.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.RichEdit.v20.1.Export.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Utils.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraBars.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraEditors.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraGrid.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraLayout.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\FastReport.Bars.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\FastReport.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\FastReport.Editor.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v20.1.Drawing.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Sparkline.v20.1.Core.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraTreeList.v20.1.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v20.1.Core.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Office.v20.1.Core.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.RichEdit.v20.1.Core.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Printing.v20.1.Core.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.Desktop.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Utils.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraBars.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraEditors.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraGrid.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraLayout.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v20.1.Drawing.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.Sparkline.v20.1.Core.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraTreeList.v20.1.xml
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Pdf.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Office.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.RichEdit.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Printing.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Utils.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraBars.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraEditors.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraLayout.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraPrinting.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraVerticalGrid.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Sparkline.v20.1.Core.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraTreeList.v20.1.resources.dll
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.Etiket.FrmEtiketDizayn.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmBildirimListesi.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmKunyeErit.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmHata.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksSevk.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmDatabaseAyar.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmEtiketYazdir.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmFirmaAyar.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBildirim.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBilgiVeriIndir.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmMagazaSevk.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmMain.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmMasrafOran.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmProgramAyarlari.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmOdemeTanim.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmTediye.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmRapor.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmUserControl.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmCariTanitim.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmDepoTanitim.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmFatura.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmKasaTanim.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmKasaTransfer.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmListe.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokEldekiMiktar.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokTanitim.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokTransfer.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Properties.Resources.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Rapor.FrmRaporFiltre.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Rapor.FrmRaporGoruntule.resources
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.GenerateResource.cache
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.exe.licenses
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.CoreCompileInputs.cache
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.CopyComplete
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.exe
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.pdb
+C:\Users\Shepherd\Downloads\HKSMY\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csprojAssemblyReference.cache
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.exe.config
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.exe
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\CrmPosHalYonetim.pdb
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.BonusSkins.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.Desktop.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Office.v21.2.Core.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v21.2.Core.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Printing.v21.2.Core.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.RichEdit.v21.2.Core.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.RichEdit.v21.2.Export.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Utils.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraBars.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraEditors.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraGrid.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraLayout.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\FastReport.Bars.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\FastReport.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\FastReport.Editor.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v21.2.Drawing.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Sparkline.v21.2.Core.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraTreeList.v21.2.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v21.2.Core.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Office.v21.2.Core.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.RichEdit.v21.2.Core.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Printing.v21.2.Core.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Data.Desktop.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Utils.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraBars.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraEditors.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraGrid.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraLayout.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraPrinting.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraVerticalGrid.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Pdf.v21.2.Drawing.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.Sparkline.v21.2.Core.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\DevExpress.XtraTreeList.v21.2.xml
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Data.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Data.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Data.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Data.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Pdf.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Office.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Office.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Office.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Office.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.RichEdit.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.RichEdit.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.RichEdit.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.RichEdit.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Printing.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Printing.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Printing.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Printing.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Utils.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Utils.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Utils.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Utils.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraBars.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraBars.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraBars.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraBars.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraEditors.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraEditors.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraEditors.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraEditors.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraLayout.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraLayout.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraLayout.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraLayout.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraPrinting.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraPrinting.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraPrinting.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraPrinting.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraVerticalGrid.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.Sparkline.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.Sparkline.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.Sparkline.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.Sparkline.v21.2.Core.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\de\DevExpress.XtraTreeList.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\es\DevExpress.XtraTreeList.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ja\DevExpress.XtraTreeList.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\bin\Debug\ru\DevExpress.XtraTreeList.v21.2.resources.dll
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.AssemblyReference.cache
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.Etiket.FrmEtiketDizayn.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmBildirimListesi.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmKunyeErit.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmHata.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksSevk.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmDatabaseAyar.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmEtiketYazdir.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmFirmaAyar.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBildirim.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmHksBilgiVeriIndir.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmMagazaSevk.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmMain.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmMasrafOran.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmProgramAyarlari.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmOdemeTanim.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmTediye.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.FrmRapor.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.FrmUserControl.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmCariTanitim.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmDepoTanitim.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmFatura.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmKasaTanim.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmKasaTransfer.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmListe.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokEldekiMiktar.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokTanitim.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.HksStokYonetim.FrmStokTransfer.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Properties.Resources.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Rapor.FrmRaporFiltre.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.Rapor.FrmRaporGoruntule.resources
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.GenerateResource.cache
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.exe.licenses
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.CoreCompileInputs.cache
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\HalYonetim.csproj.CopyComplete
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.exe
+D:\VisualStudioProjects\HalProject\HKSMY\HalYonetim\obj\x86\Debug\CrmPosHalYonetim.pdb

@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="HKSDBModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="HKSDBEntities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="FirmaBilgileri" EntityType="HKSDBModel.FirmaBilgisi" />
+    <EntitySet Name="HKSBeldeler" EntityType="HKSDBModel.HKSBelde" />
+    <EntitySet Name="HKSBildirimler" EntityType="HKSDBModel.HKSBildirim" />
+    <EntitySet Name="HKSBirimler" EntityType="HKSDBModel.HKSBirim" />
+    <EntitySet Name="HKSCinsler" EntityType="HKSDBModel.HKSCins" />
+    <EntitySet Name="HKSIlceler" EntityType="HKSDBModel.HKSIlce" />
+    <EntitySet Name="HKSIller" EntityType="HKSDBModel.HKSIL" />
+    <EntitySet Name="HKSIsletmeler" EntityType="HKSDBModel.HKSIsletme" />
+    <EntitySet Name="HKSStoklar" EntityType="HKSDBModel.HKSStok" />
+    <EntitySet Name="HKSSubeler" EntityType="HKSDBModel.HKSSube" />
+    <EntitySet Name="HKSUretimSekilleri" EntityType="HKSDBModel.HKSUretimSekli" />
+    <EntitySet Name="HKSBelgeler" EntityType="HKSDBModel.HKSBelge" />
+    <EntitySet Name="HksSevkler" EntityType="HKSDBModel.HksSevk" />
+    <EntitySet Name="StyStoklar" EntityType="HKSDBModel.StyStok" />
+    <EntitySet Name="StyCariler" EntityType="HKSDBModel.StyCari" />
+    <EntitySet Name="StyDepolar" EntityType="HKSDBModel.StyDepo" />
+    <EntitySet Name="StyKasalar" EntityType="HKSDBModel.StyKasa" />
+    <EntitySet Name="StyFaturaHareketleri" EntityType="HKSDBModel.StyFaturaHareket" />
+    <EntitySet Name="StyFaturalar" EntityType="HKSDBModel.StyFatura" />
+    <EntitySet Name="StySevkHareketleri" EntityType="HKSDBModel.StySevkHareket" />
+    <EntitySet Name="StyStokMiktarlar" EntityType="HKSDBModel.StyStokMiktar" />
+    <EntitySet Name="StyKasaMiktarlar" EntityType="HKSDBModel.StyKasaMiktar" />
+    <EntitySet Name="StyOdemeTanimlari" EntityType="HKSDBModel.StyOdemeTanim" />
+    <EntitySet Name="StyOdemeHareketleri" EntityType="HKSDBModel.StyOdemeHareket" />
+  </EntityContainer>
+  <EntityType Name="FirmaBilgisi">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="TcVgNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Unvani" Type="String" MaxLength="350" Unicode="true" FixedLength="false" />
+    <Property Name="EPosta" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Gsm" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Sifat1" Type="Int32" />
+    <Property Name="Sifat2" Type="Int32" />
+    <Property Name="Sifre" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="ServisSifresi" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSBelde">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSBildirim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSBirim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSCins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Ithalmi" Type="Boolean" />
+    <Property Name="UretimSekliID" Type="Int32" />
+    <Property Name="CinsAdi" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="UrunID" Type="Int32" />
+    <Property Name="UrunAdi" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Type="String" Name="UrunKodu" MaxLength="1000" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="HKSIlce">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSIL">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" Nullable="false" MaxLength="500" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSIsletme">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" MaxLength="600" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSStok">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adi" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="MasrafOrani" Type="Double" />
+    <Property Name="NakliyeDepolamaOran" Type="Double" />
+    <Property Name="IslemePaketlemeOran" Type="Double" />
+    <Property Name="MagazacilikOran" Type="Double" />
+    <Property Name="VergiOran" Type="Double" />
+  </EntityType>
+  <EntityType Name="HKSSube">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Adres" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="BeldeID" Type="Int32" />
+    <Property Name="IlceID" Type="Int32" />
+    <Property Name="IlID" Type="Int32" />
+    <Property Name="IsYeriTuru" Type="Int32" />
+    <Property Name="SubeAdi" Type="String" MaxLength="1000" Unicode="true" FixedLength="false" />
+    <Property Name="BelgeNoSubeSevk" Type="String" MaxLength="25" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSUretimSekli">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="UretimSekliAdi" Type="String" Nullable="false" MaxLength="250" Unicode="false" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="HKSBelge">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Belge" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="HksSevk">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="AracPlakaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BelgeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BelgeTipi" Type="Int32" />
+    <Property Name="BildirimciTcKimlikVergiNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="BildirimTarihi" Type="DateTime" Precision="3" />
+    <Property Name="BildirimTuru" Type="Int32" />
+    <Property Name="GidecekIsyeriId" Type="Int32" />
+    <Property Name="KunyeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="NihaiKunyeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MalinAdi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="MalinCinsi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MalinCinsKodNo" Type="Int32" />
+    <Property Name="MalinKodNo" Type="Int32" />
+    <Property Name="MalinMiktari" Type="Double" />
+    <Property Name="MalinSahibiTcKimlikVergiNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MalinSahibAdi" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="MalinSatisFiyati" Type="Double" />
+    <Property Name="MalinTuru" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MalinTuruKodNo" Type="Int32" />
+    <Property Name="MiktarBirimiAd" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="MiktarBirimId" Type="Int32" />
+    <Property Name="RusumMiktari" Type="Double" />
+    <Property Name="Sifat" Type="Int32" />
+    <Property Name="UniqueId" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UreticiTcKimlikVergiNo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="UreticisininAdUnvani" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="UretimIlId" Type="Int32" />
+    <Property Name="UretimIlceId" Type="Int32" />
+    <Property Name="UretimBeldeId" Type="Int32" />
+    <Property Name="UretimSekli" Type="Int32" />
+    <Property Name="HksHataKodu" Type="Int32" />
+    <Property Name="HksHataAciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="KayitTarihi" Type="DateTime" Precision="3" />
+    <Property Name="ilkBildirimTarihi" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="StyStok">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Kodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Adi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="KdvOran" Type="Double" />
+    <Property Name="Birim1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Katsayi1" Type="Double" />
+    <Property Name="Birim2" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Katsayi2" Type="Double" />
+    <Property Name="Birim3" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Katsayi3" Type="Double" />
+    <Property Name="Birim4" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Katsayi4" Type="Double" />
+    <Property Name="Fiyat" Type="Double" />
+  </EntityType>
+  <EntityType Name="StyCari">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Kodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Adi" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="FaturaAdres_IL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FaturaAdresIlce" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FaturaAdres" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SevkAdresIL" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SevkAdresIlce" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SevkAdres" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StyDepo">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="DepoNo" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DepoTanim" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StyKasa">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="No" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tanim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Iadelimi" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="StyFaturaHareket">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="FatRec" Type="Int32" />
+    <Property Name="StokKodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Birim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Miktar" Type="Double" />
+    <Property Name="Fiyat" Type="Double" />
+    <Property Name="KdvOran" Type="Double" />
+    <Property Name="KdvTutar" Type="Double" />
+    <Property Name="Tutar" Type="Double" />
+    <Property Name="KasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KasaMiktar" Type="Double" />
+    <Property Name="KasaFiyat" Type="Double" />
+    <Property Name="KasaTutar" Type="Double" />
+    <Property Name="IadeKasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IadeKasaMiktar" Type="Double" />
+    <Property Name="IadeKasaFiyat" Type="Double" />
+    <Property Name="IadeKasaTutar" Type="Double" />
+    <Property Name="IcerikMiktar" Type="Double" />
+  </EntityType>
+  <EntityType Name="StyFatura">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="BelgeTipi" Type="Byte" />
+    <Property Name="Seri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sira" Type="Int32" />
+    <Property Name="BelgeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="CariKod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AraToplam" Type="Double" />
+    <Property Name="KdvToplam" Type="Double" />
+    <Property Name="Yekun" Type="Double" />
+    <Property Name="RusumToplam" Type="Double" />
+    <Property Name="RusumKdvToplam" Type="Double" />
+    <Property Name="HammaliyeToplam" Type="Double" />
+    <Property Name="HammaliyeKdvToplam" Type="Double" />
+    <Property Name="NakliyeToplam" Type="Double" />
+    <Property Name="IadeKasaKdvTutar" Type="Double" />
+  </EntityType>
+  <EntityType Name="StySevkHareket">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Seri" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sira" Type="Int32" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="StokKodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CikisDepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GirisDepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KasaMiktar" Type="Double" />
+    <Property Name="UrunMiktar" Type="Double" />
+    <Property Name="BirimFiyat" Type="Double" />
+    <Property Name="ToplamTutar" Type="Double" />
+    <Property Name="Satir" Type="Int32" />
+    <Property Name="StokMiktarID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="StyStokMiktar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="StokKodu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BirimMiktar" Type="Double" />
+    <Property Name="KasaMiktar" Type="Double" />
+    <Property Name="IadeKasaMiktar" Type="Double" />
+    <Property Name="DepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BirmFiyat" Type="Double" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="CariKod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StyKasaMiktar">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Tarih" Type="DateTime" Precision="3" />
+    <Property Name="GirisCikis" Type="Byte" />
+    <Property Name="CariKod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DepoNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="KasaNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Miktar" Type="Double" />
+  </EntityType>
+  <EntityType Name="StyOdemeTanim">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="No" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tanim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="StyOdemeHareket">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="FatRec" Type="Int32" />
+    <Property Name="OdemeNo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Tutar" Type="Double" />
+    <Property Name="Aciklama" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

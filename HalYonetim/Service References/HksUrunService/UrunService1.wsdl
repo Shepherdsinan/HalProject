@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.gtb.gov.tr//WebServices" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://gtb.gov.tr/hks/WebServices" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="UrunService" targetNamespace="http://www.gtb.gov.tr//WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://gtb.gov.tr/hks/WebServices" location="https://hks.hal.gov.tr/WebServices/UrunService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.gtb.gov.tr//WebServices">
+      <xsd:element name="BaseRequestMessageOf_MalinNiteligiIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q1="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q1:MalinNiteligiIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_MalinNiteligiCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q2="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q2:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q3="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q3:MalinNiteligiCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_UrunlerIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q4="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q4:UrunlerIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_UrunlerCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q5="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q5:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q6="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q6:UrunlerCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_UrunBirimleriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q7="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q7:UrunBirimleriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_UrunBirimleriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q8="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q8:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q9="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q9:UrunBirimleriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_UretimSekilleriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q10="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q10:UretimSekilleriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_UretimSekilleriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q11="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q11:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q12="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q12:UretimSekilleriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_UrunCinsleriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q13="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q13:UrunCinsleriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_UrunCinsleriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q14="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q14:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q15="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q15:UrunCinsleriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_UrunMiktarBirimleriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q16="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q16:UrunMiktarBirimleriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_UrunMiktarBirimleriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q17="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q17:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q18="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q18:UrunMiktarBirimleriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.ServiceContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="MalinNiteligiIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="MalinNiteligiIstek" nillable="true" type="tns:MalinNiteligiIstek" />
+      <xs:complexType name="MalinNiteligiCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element xmlns:q19="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" minOccurs="0" name="MalinNitelikleri" nillable="true" type="q19:ArrayOfMalinNiteligiDTO" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="MalinNiteligiCevap" nillable="true" type="tns:MalinNiteligiCevap" />
+      <xs:complexType name="UrunlerIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="UrunlerIstek" nillable="true" type="tns:UrunlerIstek" />
+      <xs:complexType name="UrunlerCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+          <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" minOccurs="0" name="Urunler" nillable="true" type="q20:ArrayOfUrunDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunlerCevap" nillable="true" type="tns:UrunlerCevap" />
+      <xs:complexType name="UrunBirimleriIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="UrunBirimleriIstek" nillable="true" type="tns:UrunBirimleriIstek" />
+      <xs:complexType name="UrunBirimleriCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+          <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" minOccurs="0" name="UrunBirimleri" nillable="true" type="q21:ArrayOfUrunBirimiDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunBirimleriCevap" nillable="true" type="tns:UrunBirimleriCevap" />
+      <xs:complexType name="UretimSekilleriIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="UretimSekilleriIstek" nillable="true" type="tns:UretimSekilleriIstek" />
+      <xs:complexType name="UretimSekilleriCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+          <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" minOccurs="0" name="UretimSekilleri" nillable="true" type="q22:ArrayOfUretimSekliDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UretimSekilleriCevap" nillable="true" type="tns:UretimSekilleriCevap" />
+      <xs:complexType name="UrunCinsleriIstek">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="UrunId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunCinsleriIstek" nillable="true" type="tns:UrunCinsleriIstek" />
+      <xs:complexType name="UrunCinsleriCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+          <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" minOccurs="0" name="UrunCinsleri" nillable="true" type="q23:ArrayOfUrunCinsiDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunCinsleriCevap" nillable="true" type="tns:UrunCinsleriCevap" />
+      <xs:complexType name="UrunMiktarBirimleriIstek">
+        <xs:sequence />
+      </xs:complexType>
+      <xs:element name="UrunMiktarBirimleriIstek" nillable="true" type="tns:UrunMiktarBirimleriIstek" />
+      <xs:complexType name="UrunMiktarBirimleriCevap">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+          <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" minOccurs="0" name="UrunMiktarBirimleri" nillable="true" type="q24:ArrayOfUrunMiktarBirimleriDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunMiktarBirimleriCevap" nillable="true" type="tns:UrunMiktarBirimleriCevap" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Urun.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfMalinNiteligiDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="MalinNiteligiDTO" nillable="true" type="tns:MalinNiteligiDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfMalinNiteligiDTO" nillable="true" type="tns:ArrayOfMalinNiteligiDTO" />
+      <xs:complexType name="MalinNiteligiDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="MalinNiteligiAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="MalinNiteligiDTO" nillable="true" type="tns:MalinNiteligiDTO" />
+      <xs:complexType name="ArrayOfUrunDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="UrunDTO" nillable="true" type="tns:UrunDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfUrunDTO" nillable="true" type="tns:ArrayOfUrunDTO" />
+      <xs:complexType name="UrunDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="UrunAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunDTO" nillable="true" type="tns:UrunDTO" />
+      <xs:complexType name="ArrayOfUrunBirimiDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="UrunBirimiDTO" nillable="true" type="tns:UrunBirimiDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfUrunBirimiDTO" nillable="true" type="tns:ArrayOfUrunBirimiDTO" />
+      <xs:complexType name="UrunBirimiDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="UrunBirimAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunBirimiDTO" nillable="true" type="tns:UrunBirimiDTO" />
+      <xs:complexType name="ArrayOfUretimSekliDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="UretimSekliDTO" nillable="true" type="tns:UretimSekliDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfUretimSekliDTO" nillable="true" type="tns:ArrayOfUretimSekliDTO" />
+      <xs:complexType name="UretimSekliDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="UretimSekliAdi" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UretimSekliDTO" nillable="true" type="tns:UretimSekliDTO" />
+      <xs:complexType name="ArrayOfUrunCinsiDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="UrunCinsiDTO" nillable="true" type="tns:UrunCinsiDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfUrunCinsiDTO" nillable="true" type="tns:ArrayOfUrunCinsiDTO" />
+      <xs:complexType name="UrunCinsiDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Ithalmi" type="xs:boolean" />
+          <xs:element minOccurs="0" name="UretimSekliId" type="xs:int" />
+          <xs:element minOccurs="0" name="UrunCinsiAdi" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="UrunId" type="xs:int" />
+          <xs:element minOccurs="0" name="UrunKodu" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunCinsiDTO" nillable="true" type="tns:UrunCinsiDTO" />
+      <xs:complexType name="ArrayOfUrunMiktarBirimleriDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="UrunMiktarBirimleriDTO" nillable="true" type="tns:UrunMiktarBirimleriDTO" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfUrunMiktarBirimleriDTO" nillable="true" type="tns:ArrayOfUrunMiktarBirimleriDTO" />
+      <xs:complexType name="UrunMiktarBirimleriDTO">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="MiktarBirimAd" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="MiktarBirimId" type="xs:int" />
+          <xs:element minOccurs="0" name="UrunId" type="xs:int" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="UrunMiktarBirimleriDTO" nillable="true" type="tns:UrunMiktarBirimleriDTO" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="ArrayOfErrorModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" maxOccurs="unbounded" name="ErrorModel" nillable="true" type="tns:ErrorModel" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ArrayOfErrorModel" nillable="true" type="tns:ArrayOfErrorModel" />
+      <xs:complexType name="ErrorModel">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="HataKodu" type="xs:int" />
+          <xs:element minOccurs="0" name="Mesaj" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:complexType>
+      <xs:element name="ErrorModel" nillable="true" type="tns:ErrorModel" />
+    </xs:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="BaseRequestMessageOf_MalinNiteligiIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_MalinNiteligiIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_MalinNiteligiCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_MalinNiteligiCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_UrunlerIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_UrunlerIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_UrunlerCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_UrunlerCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_UrunBirimleriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_UrunBirimleriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_UrunBirimleriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_UrunBirimleriCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_UretimSekilleriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_UretimSekilleriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_UretimSekilleriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_UretimSekilleriCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_UrunCinsleriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_UrunCinsleriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_UrunCinsleriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_UrunCinsleriCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_UrunMiktarBirimleriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_UrunMiktarBirimleriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_UrunMiktarBirimleriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_UrunMiktarBirimleriCevap" />
+  </wsdl:message>
+  <wsdl:portType name="IUrunService">
+    <wsdl:operation name="UrunServiceMalinNiteligi">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceMalinNiteligi" name="BaseRequestMessageOf_MalinNiteligiIstek" message="tns:BaseRequestMessageOf_MalinNiteligiIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceMalinNiteligiResponse" name="BaseResponseMessageOf_MalinNiteligiCevap" message="tns:BaseResponseMessageOf_MalinNiteligiCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunler">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunler" name="BaseRequestMessageOf_UrunlerIstek" message="tns:BaseRequestMessageOf_UrunlerIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunlerResponse" name="BaseResponseMessageOf_UrunlerCevap" message="tns:BaseResponseMessageOf_UrunlerCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunBirimleri">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunBirimleri" name="BaseRequestMessageOf_UrunBirimleriIstek" message="tns:BaseRequestMessageOf_UrunBirimleriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunBirimleriResponse" name="BaseResponseMessageOf_UrunBirimleriCevap" message="tns:BaseResponseMessageOf_UrunBirimleriCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUretimSekilleri">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUretimSekilleri" name="BaseRequestMessageOf_UretimSekilleriIstek" message="tns:BaseRequestMessageOf_UretimSekilleriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUretimSekilleriResponse" name="BaseResponseMessageOf_UretimSekilleriCevap" message="tns:BaseResponseMessageOf_UretimSekilleriCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunCinsleri">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunCinsleri" name="BaseRequestMessageOf_UrunCinsleriIstek" message="tns:BaseRequestMessageOf_UrunCinsleriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunCinsleriResponse" name="BaseResponseMessageOf_UrunCinsleriCevap" message="tns:BaseResponseMessageOf_UrunCinsleriCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="UrunServiceUrunMiktarBirimleri">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunMiktarBirimleri" name="BaseRequestMessageOf_UrunMiktarBirimleriIstek" message="tns:BaseRequestMessageOf_UrunMiktarBirimleriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IUrunService/UrunServiceUrunMiktarBirimleriResponse" name="BaseResponseMessageOf_UrunMiktarBirimleriCevap" message="tns:BaseResponseMessageOf_UrunMiktarBirimleriCevap" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="UrunService">
+    <wsdl:port name="BasicHttpBinding_IUrunService" binding="i0:BasicHttpBinding_IUrunService">
+      <soap:address location="https://hks.hal.gov.tr/WebServices/UrunService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

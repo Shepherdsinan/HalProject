@@ -1,0 +1,752 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://www.gtb.gov.tr//WebServices" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="https://gtb.gov.tr/hks/WebServices" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="BildirimService" targetNamespace="http://www.gtb.gov.tr//WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:import namespace="https://gtb.gov.tr/hks/WebServices" location="https://hks.hal.gov.tr/WebServices/BildirimService.svc?wsdl=wsdl0" />
+  <wsdl:types>
+    <xsd:schema elementFormDefault="qualified" targetNamespace="http://www.gtb.gov.tr//WebServices">
+      <xsd:element name="BaseRequestMessageOf_BildirimTurleriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q1="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q1:BildirimTurleriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_BildirimTurleriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q2="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q2:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q3="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q3:BildirimTurleriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_SifatIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q4="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q4:SifatIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_SifatCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q5="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q5:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q6="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q6:SifatCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_ListOf_BildirimKayitIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q7="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q7:ArrayOfBildirimKayitIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_ListOf_BildirimKayitCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q8="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q8:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q9="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q9:ArrayOfBildirimKayitCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_ReferansKunyeIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q10="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q10:ReferansKunyeIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_ReferansKunyeCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q11="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q11:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q12="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q12:ReferansKunyeCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_KayitliKisiSorguIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q13="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q13:KayitliKisiSorguIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_KayitliKisiSorguCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q14="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q14:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q15="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q15:KayitliKisiSorguCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_TopluKunyeIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q16="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q16:TopluKunyeIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_TopluKunyeCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q17="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q17:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q18="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q18:TopluKunyeCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_BildirimEtiketIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q19="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q19:BildirimEtiketIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_BildirimEtiketCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q20="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q20:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q21="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q21:BildirimEtiketCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_BelgeTipleriIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q22="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q22:BelgeTipleriIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_BelgeTipleriCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q23="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q23:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q24="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q24:BelgeTipleriCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseRequestMessageOf_BildirimSorguIstek">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q25="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Istek" nillable="true" type="q25:BildirimSorguIstek" />
+            <xsd:element minOccurs="0" name="Password" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="ServicePassword" nillable="true" type="xsd:string" />
+            <xsd:element minOccurs="0" name="UserName" nillable="true" type="xsd:string" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="BaseResponseMessageOf_BildirimSorguCevap">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element xmlns:q26="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" minOccurs="0" name="HataKodlari" nillable="true" type="q26:ArrayOfErrorModel" />
+            <xsd:element minOccurs="0" name="IslemKodu" nillable="true" type="xsd:string" />
+            <xsd:element xmlns:q27="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" minOccurs="0" name="Sonuc" nillable="true" type="q27:BildirimSorguCevap" />
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.ServiceContract">
+      <xsd:complexType name="BildirimTurleriIstek">
+        <xsd:sequence />
+      </xsd:complexType>
+      <xsd:element name="BildirimTurleriIstek" nillable="true" type="tns:BildirimTurleriIstek" />
+      <xsd:complexType name="BildirimTurleriCevap">
+        <xsd:sequence>
+          <xsd:element xmlns:q28="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="BildirimTurleri" nillable="true" type="q28:ArrayOfBildirimTuruDTO" />
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimTurleriCevap" nillable="true" type="tns:BildirimTurleriCevap" />
+      <xsd:complexType name="SifatIstek">
+        <xsd:sequence />
+      </xsd:complexType>
+      <xsd:element name="SifatIstek" nillable="true" type="tns:SifatIstek" />
+      <xsd:complexType name="SifatCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+          <xsd:element xmlns:q29="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="Sifatlar" nillable="true" type="q29:ArrayOfSifatDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="SifatCevap" nillable="true" type="tns:SifatCevap" />
+      <xsd:complexType name="ArrayOfBildirimKayitIstek">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="BildirimKayitIstek" nillable="true" type="tns:BildirimKayitIstek" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfBildirimKayitIstek" nillable="true" type="tns:ArrayOfBildirimKayitIstek" />
+      <xsd:complexType name="BildirimKayitIstek">
+        <xsd:sequence>
+          <xsd:element xmlns:q30="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="BildirimMalBilgileri" nillable="true" type="q30:BildirimMalBilgileriDTO" />
+          <xsd:element minOccurs="0" name="BildirimTuru" type="xsd:int" />
+          <xsd:element xmlns:q31="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="BildirimciBilgileri" nillable="true" type="q31:BildirimciBilgileriDTO" />
+          <xsd:element xmlns:q32="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="IkinciKisiBilgileri" nillable="true" type="q32:IkinciKisiBilgileriDTO" />
+          <xsd:element xmlns:q33="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="MalinGidecekYerBilgileri" nillable="true" type="q33:MalinGidecekYerBilgileriDTO" />
+          <xsd:element minOccurs="0" name="ReferansBildirimKunyeNo" type="xsd:long" />
+          <xsd:element minOccurs="0" name="UniqueId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimKayitIstek" nillable="true" type="tns:BildirimKayitIstek" />
+      <xsd:complexType name="ArrayOfBildirimKayitCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="BildirimKayitCevap" nillable="true" type="tns:BildirimKayitCevap" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfBildirimKayitCevap" nillable="true" type="tns:ArrayOfBildirimKayitCevap" />
+      <xsd:complexType name="BildirimKayitCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AracPlakaNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeTipi" type="xsd:int" />
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="KayitTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="MalinCinsiId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinMiktari" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MalinSahibAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MiktarBirimId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="RusumMiktari" type="xsd:double" />
+          <xsd:element minOccurs="0" name="UniqueId" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="UreticisininAdUnvani" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="UretimBeldeId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimIlId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimIlceId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimSekli" type="xsd:int" />
+          <xsd:element minOccurs="0" name="YeniKunyeNo" type="xsd:long" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimKayitCevap" nillable="true" type="tns:BildirimKayitCevap" />
+      <xsd:complexType name="ReferansKunyeIstek">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BaslangicTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="BitisTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="KalanMiktariSifirdanBuyukOlanlar" type="xsd:boolean" />
+          <xsd:element minOccurs="0" name="KisiSifat" type="xsd:int" />
+          <xsd:element minOccurs="0" name="KunyeNo" type="xsd:long" />
+          <xsd:element minOccurs="0" name="MalinSahibiTcKimlikVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="UrunId" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ReferansKunyeIstek" nillable="true" type="tns:ReferansKunyeIstek" />
+      <xsd:complexType name="ReferansKunyeCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+          <xsd:element xmlns:q34="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="ReferansKunyeler" nillable="true" type="q34:ArrayOfReferansKunyeDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ReferansKunyeCevap" nillable="true" type="tns:ReferansKunyeCevap" />
+      <xsd:complexType name="KayitliKisiSorguIstek">
+        <xsd:sequence>
+          <xsd:element xmlns:q35="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="TcKimlikVergiNolar" nillable="true" type="q35:ArrayOfstring" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="KayitliKisiSorguIstek" nillable="true" type="tns:KayitliKisiSorguIstek" />
+      <xsd:complexType name="KayitliKisiSorguCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+          <xsd:element xmlns:q36="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="TcKimlikVergiNolar" nillable="true" type="q36:ArrayOfKayitliKisiSorguDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="KayitliKisiSorguCevap" nillable="true" type="tns:KayitliKisiSorguCevap" />
+      <xsd:complexType name="TopluKunyeIstek">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AracPlakaNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BildirimTarihi" type="xsd:dateTime" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="TopluKunyeIstek" nillable="true" type="tns:TopluKunyeIstek" />
+      <xsd:complexType name="TopluKunyeCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element xmlns:q37="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="Kunyeler" nillable="true" type="q37:ArrayOfTopluKunyeDTO" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="TopluKunyeCevap" nillable="true" type="tns:TopluKunyeCevap" />
+      <xsd:complexType name="BildirimEtiketIstek">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AracPlakaNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BildirimTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="GidecekYerBeldeId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerIlId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerIlceId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinSahibiTcKimlikNo" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimEtiketIstek" nillable="true" type="tns:BildirimEtiketIstek" />
+      <xsd:complexType name="BildirimEtiketCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element xmlns:q38="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="Kunyeler" nillable="true" type="q38:ArrayOfBildirimEtiketDTO" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimEtiketCevap" nillable="true" type="tns:BildirimEtiketCevap" />
+      <xsd:complexType name="BelgeTipleriIstek">
+        <xsd:sequence />
+      </xsd:complexType>
+      <xsd:element name="BelgeTipleriIstek" nillable="true" type="tns:BelgeTipleriIstek" />
+      <xsd:complexType name="BelgeTipleriCevap">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BelgeTipleri" nillable="true" type="tns:ArrayOfBelgeTipiDTO" />
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BelgeTipleriCevap" nillable="true" type="tns:BelgeTipleriCevap" />
+      <xsd:complexType name="ArrayOfBelgeTipiDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="BelgeTipiDTO" nillable="true" type="tns:BelgeTipiDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfBelgeTipiDTO" nillable="true" type="tns:ArrayOfBelgeTipiDTO" />
+      <xsd:complexType name="BelgeTipiDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BelgeTipiAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="Id" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BelgeTipiDTO" nillable="true" type="tns:BelgeTipiDTO" />
+      <xsd:complexType name="BildirimSorguIstek">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BaslangicTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="BitisTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="KalanMiktariSifirdanBuyukOlanlar" type="xsd:boolean" />
+          <xsd:element minOccurs="0" name="KunyeNo" type="xsd:long" />
+          <xsd:element minOccurs="0" name="KunyeTuru" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Sifat" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UniqueId" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimSorguIstek" nillable="true" type="tns:BildirimSorguIstek" />
+      <xsd:complexType name="BildirimSorguCevap">
+        <xsd:sequence>
+          <xsd:element xmlns:q39="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" minOccurs="0" name="Bildirimler" nillable="true" type="q39:ArrayOfBildirimSorguDTO" />
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimSorguCevap" nillable="true" type="tns:BildirimSorguCevap" />
+    </xsd:schema>
+    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Bildirim.Model">
+      <xsd:complexType name="ArrayOfBildirimTuruDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="BildirimTuruDTO" nillable="true" type="tns:BildirimTuruDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfBildirimTuruDTO" nillable="true" type="tns:ArrayOfBildirimTuruDTO" />
+      <xsd:complexType name="BildirimTuruDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="BildirimTuruAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="Id" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimTuruDTO" nillable="true" type="tns:BildirimTuruDTO" />
+      <xsd:complexType name="ArrayOfSifatDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="SifatDTO" nillable="true" type="tns:SifatDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfSifatDTO" nillable="true" type="tns:ArrayOfSifatDTO" />
+      <xsd:complexType name="SifatDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="Id" type="xsd:int" />
+          <xsd:element minOccurs="0" name="SifatAdi" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="SifatDTO" nillable="true" type="tns:SifatDTO" />
+      <xsd:complexType name="BildirimMalBilgileriDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AnalizeGonderilecekMi" type="xsd:boolean" />
+          <xsd:element minOccurs="0" name="GelenUlkeId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinCinsiId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinMiktari" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MalinNiteligi" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinSatisFiyat" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MiktarBirimId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimBeldeId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimIlId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimIlceId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimSekli" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimMalBilgileriDTO" nillable="true" type="tns:BildirimMalBilgileriDTO" />
+      <xsd:complexType name="BildirimciBilgileriDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="KisiSifat" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimciBilgileriDTO" nillable="true" type="tns:BildirimciBilgileriDTO" />
+      <xsd:complexType name="IkinciKisiBilgileriDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AdSoyad" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="CepTel" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="Eposta" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="KisiSifat" type="xsd:int" />
+          <xsd:element minOccurs="0" name="TcKimlikVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="YurtDisiMi" type="xsd:boolean" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="IkinciKisiBilgileriDTO" nillable="true" type="tns:IkinciKisiBilgileriDTO" />
+      <xsd:complexType name="MalinGidecekYerBilgileriDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AracPlakaNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeTipi" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekIsyeriId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekUlkeId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerBeldeId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerIlId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerIlceId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerIsletmeTuruId" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="MalinGidecekYerBilgileriDTO" nillable="true" type="tns:MalinGidecekYerBilgileriDTO" />
+      <xsd:complexType name="ArrayOfReferansKunyeDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ReferansKunyeDTO" nillable="true" type="tns:ReferansKunyeDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfReferansKunyeDTO" nillable="true" type="tns:ArrayOfReferansKunyeDTO" />
+      <xsd:complexType name="ReferansKunyeDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AnalizStatus" type="xsd:boolean" />
+          <xsd:element minOccurs="0" name="AracPlakaNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeTipi" type="xsd:int" />
+          <xsd:element minOccurs="0" name="BildirimTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="BildirimTuru" type="xsd:int" />
+          <xsd:element minOccurs="0" name="BildirimciTcKimlikVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="GidecekIsyeriId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerTuruId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="KalanMiktar" type="xsd:double" />
+          <xsd:element minOccurs="0" name="KunyeNo" type="xsd:long" />
+          <xsd:element minOccurs="0" name="MalinAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinCinsKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinCinsi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinMiktari" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MalinSahibiTcKimlikVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinTuru" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinTuruKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MiktarBirimId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MiktarBirimiAd" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="UreticiTcKimlikVergiNo" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ReferansKunyeDTO" nillable="true" type="tns:ReferansKunyeDTO" />
+      <xsd:complexType name="ArrayOfKayitliKisiSorguDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="KayitliKisiSorguDTO" nillable="true" type="tns:KayitliKisiSorguDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfKayitliKisiSorguDTO" nillable="true" type="tns:ArrayOfKayitliKisiSorguDTO" />
+      <xsd:complexType name="KayitliKisiSorguDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="KayitliKisiMi" type="xsd:boolean" />
+          <xsd:element xmlns:q40="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Sifatlari" nillable="true" type="q40:ArrayOfint" />
+          <xsd:element minOccurs="0" name="TcKimlikVergiNo" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="KayitliKisiSorguDTO" nillable="true" type="tns:KayitliKisiSorguDTO" />
+      <xsd:complexType name="ArrayOfTopluKunyeDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="TopluKunyeDTO" nillable="true" type="tns:TopluKunyeDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfTopluKunyeDTO" nillable="true" type="tns:ArrayOfTopluKunyeDTO" />
+      <xsd:complexType name="TopluKunyeDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AracPlakaNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeTipi" type="xsd:int" />
+          <xsd:element minOccurs="0" name="BelgeTipiAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="Bildirimci" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="GidecekYerIsletenTcKimlikVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="KayitTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="MalinAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinKunyeNo" type="xsd:long" />
+          <xsd:element minOccurs="0" name="MalinMiktar" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MalinSahibAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinSahibiTcVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MiktarBirimAd" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MiktarBirimId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Nereden" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="Nereye" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="TcKimlikVergiNo" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="TopluKunyeDTO" nillable="true" type="tns:TopluKunyeDTO" />
+      <xsd:complexType name="ArrayOfBildirimEtiketDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="BildirimEtiketDTO" nillable="true" type="tns:BildirimEtiketDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfBildirimEtiketDTO" nillable="true" type="tns:ArrayOfBildirimEtiketDTO" />
+      <xsd:complexType name="BildirimEtiketDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="IsletmeAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="KayitTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="MalinAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinAlisFiyat" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MalinCinsAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinKunyeNo" type="xsd:long" />
+          <xsd:element minOccurs="0" name="MalinMiktar" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MiktarBirimAd" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MiktarBirimId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UreticisininAdUnvani" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="UretimSekliAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="UretimSekliId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UretimTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="UretimYeri" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimEtiketDTO" nillable="true" type="tns:BildirimEtiketDTO" />
+      <xsd:complexType name="ArrayOfBildirimSorguDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="BildirimSorguDTO" nillable="true" type="tns:BildirimSorguDTO" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfBildirimSorguDTO" nillable="true" type="tns:ArrayOfBildirimSorguDTO" />
+      <xsd:complexType name="BildirimSorguDTO">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="AnalizStatus" type="xsd:boolean" />
+          <xsd:element minOccurs="0" name="AracPlakaNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="BelgeTipi" type="xsd:int" />
+          <xsd:element minOccurs="0" name="BildirimTarihi" type="xsd:dateTime" />
+          <xsd:element minOccurs="0" name="BildirimTuru" type="xsd:int" />
+          <xsd:element minOccurs="0" name="BildirimciTcKimlikVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="GidecekIsyeriId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="GidecekYerTuruId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="KalanMiktar" type="xsd:double" />
+          <xsd:element minOccurs="0" name="KunyeNo" type="xsd:long" />
+          <xsd:element minOccurs="0" name="MalinAdi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinCinsKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinCinsi" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MalinMiktari" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MalinSahibiTcKimlikVergiNo" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinSatisFiyati" type="xsd:double" />
+          <xsd:element minOccurs="0" name="MalinTuru" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="MalinTuruKodNo" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MiktarBirimId" type="xsd:int" />
+          <xsd:element minOccurs="0" name="MiktarBirimiAd" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="RusumMiktari" type="xsd:double" />
+          <xsd:element minOccurs="0" name="Sifat" type="xsd:int" />
+          <xsd:element minOccurs="0" name="UniqueId" nillable="true" type="xsd:string" />
+          <xsd:element minOccurs="0" name="UreticiTcKimlikVergiNo" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="BildirimSorguDTO" nillable="true" type="tns:BildirimSorguDTO" />
+    </xsd:schema>
+    <xsd:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+      <xsd:complexType name="ArrayOfstring">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfstring" nillable="true" type="tns:ArrayOfstring" />
+      <xsd:complexType name="ArrayOfint">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="int" type="xsd:int" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfint" nillable="true" type="tns:ArrayOfint" />
+    </xsd:schema>
+    <xsd:schema xmlns:tns="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/GTB.HKS.Core.ServiceContract">
+      <xsd:complexType name="ArrayOfErrorModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="ErrorModel" nillable="true" type="tns:ErrorModel" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ArrayOfErrorModel" nillable="true" type="tns:ArrayOfErrorModel" />
+      <xsd:complexType name="ErrorModel">
+        <xsd:sequence>
+          <xsd:element minOccurs="0" name="HataKodu" type="xsd:int" />
+          <xsd:element minOccurs="0" name="Mesaj" nillable="true" type="xsd:string" />
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:element name="ErrorModel" nillable="true" type="tns:ErrorModel" />
+    </xsd:schema>
+    <xs:schema xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="anyType" nillable="true" type="xs:anyType" />
+      <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+      <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+      <xs:element name="boolean" nillable="true" type="xs:boolean" />
+      <xs:element name="byte" nillable="true" type="xs:byte" />
+      <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+      <xs:element name="decimal" nillable="true" type="xs:decimal" />
+      <xs:element name="double" nillable="true" type="xs:double" />
+      <xs:element name="float" nillable="true" type="xs:float" />
+      <xs:element name="int" nillable="true" type="xs:int" />
+      <xs:element name="long" nillable="true" type="xs:long" />
+      <xs:element name="QName" nillable="true" type="xs:QName" />
+      <xs:element name="short" nillable="true" type="xs:short" />
+      <xs:element name="string" nillable="true" type="xs:string" />
+      <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+      <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+      <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+      <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+      <xs:element name="char" nillable="true" type="tns:char" />
+      <xs:simpleType name="char">
+        <xs:restriction base="xs:int" />
+      </xs:simpleType>
+      <xs:element name="duration" nillable="true" type="tns:duration" />
+      <xs:simpleType name="duration">
+        <xs:restriction base="xs:duration">
+          <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+          <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+          <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:element name="guid" nillable="true" type="tns:guid" />
+      <xs:simpleType name="guid">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+        </xs:restriction>
+      </xs:simpleType>
+      <xs:attribute name="FactoryType" type="xs:QName" />
+      <xs:attribute name="Id" type="xs:ID" />
+      <xs:attribute name="Ref" type="xs:IDREF" />
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="BaseRequestMessageOf_BildirimTurleriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_BildirimTurleriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_BildirimTurleriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_BildirimTurleriCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_SifatIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_SifatIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_SifatCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_SifatCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_ListOf_BildirimKayitIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_ListOf_BildirimKayitIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_ListOf_BildirimKayitCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_ListOf_BildirimKayitCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_ReferansKunyeIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_ReferansKunyeIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_ReferansKunyeCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_ReferansKunyeCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_KayitliKisiSorguIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_KayitliKisiSorguIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_KayitliKisiSorguCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_KayitliKisiSorguCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_TopluKunyeIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_TopluKunyeIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_TopluKunyeCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_TopluKunyeCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_BildirimEtiketIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_BildirimEtiketIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_BildirimEtiketCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_BildirimEtiketCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_BelgeTipleriIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_BelgeTipleriIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_BelgeTipleriCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_BelgeTipleriCevap" />
+  </wsdl:message>
+  <wsdl:message name="BaseRequestMessageOf_BildirimSorguIstek">
+    <wsdl:part name="parameters" element="tns:BaseRequestMessageOf_BildirimSorguIstek" />
+  </wsdl:message>
+  <wsdl:message name="BaseResponseMessageOf_BildirimSorguCevap">
+    <wsdl:part name="parameters" element="tns:BaseResponseMessageOf_BildirimSorguCevap" />
+  </wsdl:message>
+  <wsdl:portType name="IBildirimService">
+    <wsdl:operation name="BildirimServisBildirimTurleri">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimTurleri" name="BaseRequestMessageOf_BildirimTurleriIstek" message="tns:BaseRequestMessageOf_BildirimTurleriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimTurleriResponse" name="BaseResponseMessageOf_BildirimTurleriCevap" message="tns:BaseResponseMessageOf_BildirimTurleriCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisSifatListesi">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisSifatListesi" name="BaseRequestMessageOf_SifatIstek" message="tns:BaseRequestMessageOf_SifatIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisSifatListesiResponse" name="BaseResponseMessageOf_SifatCevap" message="tns:BaseResponseMessageOf_SifatCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimKaydet">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimKaydet" name="BaseRequestMessageOf_ListOf_BildirimKayitIstek" message="tns:BaseRequestMessageOf_ListOf_BildirimKayitIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimKaydetResponse" name="BaseResponseMessageOf_ListOf_BildirimKayitCevap" message="tns:BaseResponseMessageOf_ListOf_BildirimKayitCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisReferansKunyeler">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisReferansKunyeler" name="BaseRequestMessageOf_ReferansKunyeIstek" message="tns:BaseRequestMessageOf_ReferansKunyeIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisReferansKunyelerResponse" name="BaseResponseMessageOf_ReferansKunyeCevap" message="tns:BaseResponseMessageOf_ReferansKunyeCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisKayitliKisiSorgu">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisKayitliKisiSorgu" name="BaseRequestMessageOf_KayitliKisiSorguIstek" message="tns:BaseRequestMessageOf_KayitliKisiSorguIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisKayitliKisiSorguResponse" name="BaseResponseMessageOf_KayitliKisiSorguCevap" message="tns:BaseResponseMessageOf_KayitliKisiSorguCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisTopluKunye">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisTopluKunye" name="BaseRequestMessageOf_TopluKunyeIstek" message="tns:BaseRequestMessageOf_TopluKunyeIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisTopluKunyeResponse" name="BaseResponseMessageOf_TopluKunyeCevap" message="tns:BaseResponseMessageOf_TopluKunyeCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimEtiket">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimEtiket" name="BaseRequestMessageOf_BildirimEtiketIstek" message="tns:BaseRequestMessageOf_BildirimEtiketIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimEtiketResponse" name="BaseResponseMessageOf_BildirimEtiketCevap" message="tns:BaseResponseMessageOf_BildirimEtiketCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBelgeTipleriListesi">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBelgeTipleriListesi" name="BaseRequestMessageOf_BelgeTipleriIstek" message="tns:BaseRequestMessageOf_BelgeTipleriIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBelgeTipleriListesiResponse" name="BaseResponseMessageOf_BelgeTipleriCevap" message="tns:BaseResponseMessageOf_BelgeTipleriCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimcininYaptigiBildirimListesi">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimcininYaptigiBildirimListesi" name="BaseRequestMessageOf_BildirimSorguIstek" message="tns:BaseRequestMessageOf_BildirimSorguIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimcininYaptigiBildirimListesiResponse" name="BaseResponseMessageOf_BildirimSorguCevap" message="tns:BaseResponseMessageOf_BildirimSorguCevap" />
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimciyeYapilanBildirimListesi">
+      <wsdl:input wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimciyeYapilanBildirimListesi" name="BaseRequestMessageOf_BildirimSorguIstek" message="tns:BaseRequestMessageOf_BildirimSorguIstek" />
+      <wsdl:output wsaw:Action="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimciyeYapilanBildirimListesiResponse" name="BaseResponseMessageOf_BildirimSorguCevap" message="tns:BaseResponseMessageOf_BildirimSorguCevap" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:service name="BildirimService">
+    <wsdl:port name="BasicHttpBinding_IBildirimService" binding="i0:BasicHttpBinding_IBildirimService">
+      <soap:address location="https://hks.hal.gov.tr/WebServices/BildirimService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

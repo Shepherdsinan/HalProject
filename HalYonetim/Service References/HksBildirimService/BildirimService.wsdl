@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://gtb.gov.tr/hks/WebServices" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:i0="http://www.gtb.gov.tr//WebServices" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://gtb.gov.tr/hks/WebServices" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IBildirimService_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+          </wsp:Policy>
+        </sp:TransportBinding>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="http://www.gtb.gov.tr//WebServices" location="https://hks.hal.gov.tr/WebServices/BildirimService.svc?wsdl" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IBildirimService" type="i0:IBildirimService">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IBildirimService_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="BildirimServisBildirimTurleri">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimTurleri" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_BildirimTurleriIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_BildirimTurleriCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisSifatListesi">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisSifatListesi" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_SifatIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_SifatCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimKaydet">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimKaydet" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_ListOf_BildirimKayitIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_ListOf_BildirimKayitCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisReferansKunyeler">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisReferansKunyeler" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_ReferansKunyeIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_ReferansKunyeCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisKayitliKisiSorgu">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisKayitliKisiSorgu" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_KayitliKisiSorguIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_KayitliKisiSorguCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisTopluKunye">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisTopluKunye" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_TopluKunyeIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_TopluKunyeCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimEtiket">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimEtiket" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_BildirimEtiketIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_BildirimEtiketCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBelgeTipleriListesi">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBelgeTipleriListesi" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_BelgeTipleriIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_BelgeTipleriCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimcininYaptigiBildirimListesi">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimcininYaptigiBildirimListesi" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_BildirimSorguIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_BildirimSorguCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BildirimServisBildirimciyeYapilanBildirimListesi">
+      <soap:operation soapAction="http://www.gtb.gov.tr//WebServices/IBildirimService/BildirimServisBildirimciyeYapilanBildirimListesi" style="document" />
+      <wsdl:input name="BaseRequestMessageOf_BildirimSorguIstek">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="BaseResponseMessageOf_BildirimSorguCevap">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>

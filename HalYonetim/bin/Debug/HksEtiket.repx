@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="12/26/2020 14:20:48" ReportInfo.Modified="06/06/2022 22:24:45" ReportInfo.CreatorVersion="2020.1.17.0">
+  <Dictionary>
+    <BusinessObjectDataSource Name="HksEtiket" ReferenceName="HksEtiket" DataType="CrmPosHalYonetim.BildirimEtiketItem, CrmPosHalYonetim, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" Enabled="true">
+      <Column Name="AracPlaka" DataType="System.String"/>
+      <Column Name="BelgeNo" DataType="System.String"/>
+      <Column Name="BelgeTipi" DataType="System.String"/>
+      <Column Name="BildirimciTcKimlikVergiNo" DataType="System.String"/>
+      <Column Name="BildirimTuru" DataType="System.String"/>
+      <Column Name="Sube" DataType="System.String"/>
+      <Column Name="Kunye" DataType="System.String"/>
+      <Column Name="NihaiKunyeNo" DataType="System.String"/>
+      <Column Name="MalinAdi" DataType="System.String"/>
+      <Column Name="MalinCinsi" DataType="System.String"/>
+      <Column Name="MalinMiktari" DataType="System.Double"/>
+      <Column Name="MalinSahibiTcKimlikVergiNo" DataType="System.String"/>
+      <Column Name="MalinSahibAdi" DataType="System.String"/>
+      <Column Name="MalinSatisFiyati" DataType="System.Double"/>
+      <Column Name="MalinTuru" DataType="System.String"/>
+      <Column Name="MiktarBirimiAd" DataType="System.String"/>
+      <Column Name="UreticiTcKimlikVergiNo" DataType="System.String"/>
+      <Column Name="UreticisininAdUnvani" DataType="System.String"/>
+      <Column Name="UretimIlce" DataType="System.String"/>
+      <Column Name="UretimBelde" DataType="System.String"/>
+      <Column Name="UretimSekli" DataType="System.String"/>
+      <Column Name="HksHataAciklama" Enabled="false" DataType="System.String"/>
+      <Column Name="UretimIli" DataType="System.String"/>
+      <Column Name="KayitTarihi" DataType="System.DateTime"/>
+      <Column Name="MasrafOran" DataType="System.Double"/>
+      <Column Name="MalinSatisFiyatiMasrafDahil" DataType="System.Double"/>
+      <Column Name="IslemePaketlemeOran" DataType="System.Double"/>
+      <Column Name="MagazacilikOran" DataType="System.Double"/>
+      <Column Name="NakliyeDepolamaOran" DataType="System.Double"/>
+      <Column Name="VergiOran" DataType="System.Double"/>
+      <Column Name="IslemePaketlemeTutar" DataType="System.Double"/>
+      <Column Name="MagazacilikTutar" DataType="System.Double"/>
+      <Column Name="NakliyeDepolamaTutar" DataType="System.Double"/>
+      <Column Name="VergiTutar" DataType="System.Double"/>
+      <Column Name="ilkbildirimtarihi" DataType="System.DateTime"/>
+      <Column Name="SevkBildirimTarihi" DataType="System.DateTime"/>
+    </BusinessObjectDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" RawPaperSize="9" LeftMargin="0" TopMargin="0" RightMargin="0" BottomMargin="0" MirrorMargins="true" FirstPageSource="15" OtherPagesSource="15" Columns.Count="2" Columns.Width="105" Columns.Positions="0,105" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="396.9" Height="364.2" Border.Lines="All" DataSource="HksEtiket">
+      <TextObject Name="Text1" Left="2.1" Top="157.95" Width="189" Height="28.35" Text="ÜRETİM YERİ/GÜMRÜK KAPISI:" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text3" Top="1" Width="396.9" Height="18.9" Text="[HksEtiket.MalinAdi]" HorzAlign="Center" Font="Arial, 12pt, style=Bold"/>
+      <TextObject Name="Text4" Top="21.35" Width="396.9" Height="18.9" Fill.Color="Black" Text="[HksEtiket.MalinTuru]" HorzAlign="Center" Font="Arial, 10pt, style=Bold" TextFill.Color="White"/>
+      <TextObject Name="Text5" Left="191.1" Top="157.95" Width="189" Height="18.9" Text="[HksEtiket.UretimIli]/[HksEtiket.UretimIlce]/[HksEtiket.UretimBelde]" Font="Arial, 8pt"/>
+      <BarcodeObject Name="Barcode1" Left="138.75" Top="29.35" Width="116" Height="116" DataColumn="HksEtiket.NihaiKunyeNo" ShowText="false" Barcode="QR Code" Barcode.ErrorCorrection="L" Barcode.Encoding="UTF8" Barcode.QuietZone="true"/>
+      <TextObject Name="Text7" Left="2.1" Top="181.18" Width="189" Height="18.9" Text="İLK BİLDİRİM TARİHİ:" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text8" Left="191.1" Top="180.86" Width="189" Height="18.9" Text="[HksEtiket.ilkbildirimtarihi]" Format="Date" Format.Format="d" Font="Arial, 8pt"/>
+      <TextObject Name="Text9" Left="2.1" Top="220.86" Width="189" Height="18.9" Text="MİKTARI :" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text10" Left="191.1" Top="220.22" Width="189" Height="18.9" Text="[HksEtiket.MalinMiktari]" Format="Number" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.NegativePattern="1" WordWrap="false" Font="Arial, 8pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text11" Left="3" Top="244.64" Width="189" Height="18.9" Text="ALIŞ FİYATI :" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text12" Left="191.1" Top="243.68" Width="189" Height="18.9" Text="[HksEtiket.MalinSatisFiyati]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="₺" Format.PositivePattern="3" Format.NegativePattern="1" WordWrap="false" Font="Arial, 8pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text13" Left="3" Top="288.2" Width="189" Height="18.9" Text="ÜRETİCİ :" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text14" Left="191.1" Top="288.49" Width="189" Height="18.9" Text="[HksEtiket.UreticisininAdUnvani]" Font="Arial, 8pt"/>
+      <TextObject Name="Text15" Left="3" Top="309.95" Width="189" Height="18.9" Text="İŞLETME ADI :" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text2" Left="191.1" Top="309.95" Width="189" Height="18.9" Text="[HksEtiket.Sube]" Font="Arial, 8pt"/>
+      <TextObject Name="Text6" Left="11.55" Top="335.85" Width="368.55" Height="28.35" Text="T.C Ticaret Bakanlığı Hal Kayıt Sisteminden alınan künye bilgilerini&#13;&#10;www.hal.gov.tr adresinden künye numarası ile sorgulayabilirsiniz." Font="Arial, 8pt"/>
+      <TextObject Name="Text16" Left="191.1" Top="266.03" Width="189" Height="18.9" Text="[HksEtiket.MalinSatisFiyatiMasrafDahil]" Format="Currency" Format.UseLocale="false" Format.DecimalDigits="2" Format.DecimalSeparator="," Format.GroupSeparator="." Format.CurrencySymbol="₺" Format.PositivePattern="0" Format.NegativePattern="1" WordWrap="false" Font="Arial, 8pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text17" Left="3" Top="265.42" Width="189" Height="18.9" Text="MASRAF DAHİL ALIŞ FİYATI :" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text18" Left="82.05" Top="133.75" Width="226.8" Height="18.9" Text="[HksEtiket.NihaiKunyeNo]" HorzAlign="Center" Font="Arial, 9pt"/>
+      <TextObject Name="Text19" Top="200.77" Width="189" Height="18.9" Text="SEVK TARİHİ:" HorzAlign="Right" Font="Arial, 8pt"/>
+      <TextObject Name="Text20" Left="191" Top="200.45" Width="189" Height="18.9" Text="[HksEtiket.SevkBildirimTarihi]" Format="Date" Format.Format="d" Font="Arial, 8pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>
